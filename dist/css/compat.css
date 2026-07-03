@@ -19,8 +19,10 @@
   --color-on-surface-muted: var(--md-sys-color-outline);
   --color-border: var(--md-sys-color-outline-variant);
   --color-surface-subtle: var(--md-sys-color-surface-container);
-  --color-accent: var(--md-sys-color-primary);
-  --color-accent-text: var(--md-sys-color-on-primary-container);
+  /* Brand yellow lives in the tertiary ramp; tone 80 ≈ the original #f5c542.
+     Decorative accent stays bright in both themes (fixed tone, does not flip). */
+  --color-accent: var(--md-ref-palette-tertiary-80);
+  --color-accent-text: var(--md-sys-color-tertiary);
   --color-error: var(--md-sys-color-error);
   --color-surface-footer: var(--md-sys-color-inverse-surface);
   --color-on-surface-footer: var(--md-sys-color-inverse-on-surface);
