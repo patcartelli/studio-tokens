@@ -8,10 +8,14 @@ Design tokens for [Studio Cartelli](https://github.com/patcartelli/studio-cartel
 tokens/                  Tokens Studio JSON — the source of truth
   ref/palette.json       M3 tonal palettes (primary…error × tones 0–100)
   ref/typeface.json      brand (Polymath Display) / plain (Polymath Text) / mono (DM Mono)
-  sys/color.light.json   M3 color roles → palette aliases, light scheme
-  sys/color.dark.json    M3 color roles → palette aliases, dark scheme
-  sys/typescale.json     M3 typescale on Studio Cartelli fonts (+ responsive clamp endpoints)
-  sc/extended.json       Non-M3 categories: spacing, layout, grid, elevation, footer one-offs
+  ref/key.json           white/black, key-color seeds, MTB source seed
+  sys/color.light.json   M3 color roles → palette aliases, light scheme ("Schemes" group)
+  sys/color.dark.json    M3 color roles → palette aliases, dark scheme ("Schemes" group)
+  sys/state.json         Hover/focus/press state-layer overlays ("State Layers" group)
+  sys/surfaces.json      Elevation surface-tint overlays
+  sys/shape.json         M3 corner-radius scale ("Shape" collection)
+  sys/typescale.json     M3 typescale on Studio Cartelli fonts (+ emphasized variants, clamp endpoints)
+  sc/extended.json       Non-M3 categories: spacing, layout, grid, elevation, footer one-offs, custom colors ("Studio Cartelli" group)
   sc/extended.dark.json  Dark-scheme overrides for extended tokens
 build/build.mjs          Style Dictionary v4 + @tokens-studio/sd-transforms
 dist/css/tokens.css      Generated: :root (light) + :root[data-theme="dark"]
@@ -48,9 +52,9 @@ Replaces the `:root` token block (and the `--container-padding`/`--grid-gap` med
 ## Tokens Studio workflow (Pro)
 
 1. **Sync provider** (Settings → Sync providers → GitHub): fine-grained PAT scoped to this repo (Contents: Read and write), repository `patcartelli/studio-tokens`, branch **`main`**, token storage location `tokens` (the directory — multi-file mode). The `figma-import` branch is historical (raw Material Theme Builder export) — never point the plugin at it.
-2. **Themes dropdown** (top-left): the `scheme` group holds `light`/`dark` from `$themes.json` — one-click scheme switching.
+2. **Themes dropdown** (top-left): four theme groups drive three exported collections — `M3` (`light`/`dark` modes: schemes, state layers, palette, extended/custom colors), `Font theme` (single mode: typeface families/weights), `Shape` (single mode: corner-radius scale).
 3. **Edit loop**: pull before editing → edit tokens → push to `main` → CI rebuilds `dist/` and gates on WCAG AA contrast + drift.
-4. **Export to Figma** (Styles & Variables → Export): themes `light`+`dark` → one `scheme` variable collection with both modes. Settings: variables all on; styles Typography + Effects only (color styles are redundant next to variables); "Create styles with variable references" ON; "Update existing style and variable names" ON; "Remove styles and variables without connection to a token" ON once the file contains no hand-made styles worth keeping.
+4. **Export to Figma** (Styles & Variables → Export): exports all three collections in one pass. Settings: variables all on; styles Typography + Effects only (color styles are redundant next to variables); "Create styles with variable references" ON; "Update existing style and variable names" ON; "Remove styles and variables without connection to a token" ON once the file contains no hand-made styles worth keeping.
 5. **Push after every export** — the plugin stamps Figma collection/mode IDs into `$themes.json`; committing them makes future exports update the same collection instead of creating duplicates.
 
 ## Naming notes
@@ -63,9 +67,10 @@ Replaces the `:root` token block (and the `--container-padding`/`--grid-gap` med
 
 ### Figma-facing structure vs. CSS output
 
-Token source files are rooted at flat, Material Theme Builder-style groups — `typescale`, `sys`, `ref`, `white`/`black`, `key-colors`, `source`, `surfaces`, `state-layers` — instead of nesting three levels under a repeated `md.sys.*`/`md.ref.*`. This is what Tokens Studio/Figma groups by, so styles and variables show up as shallow siblings (`typescale / display / large`, `ref / primary / 40`, `state-layers / primary / opacity-08`) rather than everything buried under `md / sys / ...`.
+Token source files are rooted at flat, Material Theme Builder-style groups — `typescale`, `Schemes`, `ref`, `white`/`black`, `key-colors`, `source`, `surfaces`, `State Layers`, `shape`, `Studio Cartelli` — instead of nesting three levels under a repeated `md.sys.*`/`md.ref.*`. This mirrors Google's own Material 3 Design Kit's organization (collections: `M3`, `Typescale`, `Font theme`, `Shape`; groups within `M3`: `Schemes`, `State Layers`, `Add-ons`) rather than everything buried under `md / sys / ...`. One deliberate deviation: our custom, non-spec colors (`number-emphasis`, footer family) live in a `Studio Cartelli` group rather than M3's `Add-ons` — that term specifically means extra seed-generated brand color ramps (full tone/container/on-* sets), not simple value overrides, so mislabeling ours as `Add-ons` would misrepresent the M3 vocabulary.
 
-The build's `name/m3-remap` transform (`build/build.mjs`) reconstructs the spec-correct `--md-sys-*`/`--md-ref-*` CSS variable name from each token's original path — so **the Figma-facing organization and the CSS output are decoupled**: reorganize the JSON for navigability without ever touching a published variable name. `compat.css` and the site are unaffected by this structure.
+The build's `name/m3-remap` transform (`build/build.mjs`) reconstructs the spec-correct `--md-sys-*`/`--md-ref-*`/legacy `--color-*` CSS variable name from each token's original path — so **the Figma-facing organization and the CSS output are decoupled**: reorganize the JSON for navigability without ever touching a published variable name. `compat.css` and the site are unaffected by this structure.
+
 - The footer palette (`--color-surface-footer`, `--color-on-surface-footer`, `--color-footer-link`, and its muted/copyright/border grays) is **fixed dark in both site themes by design** — it does not alias the M3 `inverse-surface` roles, which intentionally invert per scheme.
 - `--color-footer-link` and `--color-accent` both resolve to the fixed `tertiary.80` reference — the brand yellow key color, unaffected by theme.
 - Polymath's "Regular" cut is weight 500, not 400 — `md.ref.typeface.weight-regular` reflects that; `weight-bold` (700) is available for future use.

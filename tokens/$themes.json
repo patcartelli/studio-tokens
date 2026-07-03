@@ -4,7 +4,6 @@
     "name": "light",
     "selectedTokenSets": {
       "ref/palette": "enabled",
-      "ref/typeface": "enabled",
       "sys/color.light": "enabled",
       "sys/typescale": "enabled",
       "sc/extended": "enabled",
@@ -12,7 +11,7 @@
       "ref/key": "enabled",
       "sys/surfaces": "enabled"
     },
-    "group": "scheme",
+    "group": "M3",
     "$figmaCollectionId": "VariableCollectionId:381:12455",
     "$figmaModeId": "381:6",
     "$figmaVariableReferences": {
@@ -365,7 +364,6 @@
     "name": "dark",
     "selectedTokenSets": {
       "ref/palette": "enabled",
-      "ref/typeface": "enabled",
       "sys/color.dark": "enabled",
       "sys/typescale": "enabled",
       "sc/extended": "enabled",
@@ -374,7 +372,7 @@
       "ref/key": "enabled",
       "sys/surfaces": "enabled"
     },
-    "group": "scheme",
+    "group": "M3",
     "$figmaCollectionId": "VariableCollectionId:381:12455",
     "$figmaModeId": "381:7",
     "$figmaVariableReferences": {
@@ -985,6 +983,22 @@
       "md.sys.color.scrim": "S:421d4e52b46e398a6951b8faf5fd09db112f2aa0,",
       "md.sys.color.shadow": "S:49743a9ba262cf814cd6f779928f689a9ebbb3a7,",
       "md.sys.color.surface-tint": "S:89512783a8a4fb29b07bbcc5bdc591213f7a0e85,"
+    }
+  },
+  {
+    "id": "typography",
+    "name": "default",
+    "group": "Font theme",
+    "selectedTokenSets": {
+      "ref/typeface": "enabled"
+    }
+  },
+  {
+    "id": "shape",
+    "name": "default",
+    "group": "Shape",
+    "selectedTokenSets": {
+      "sys/shape": "enabled"
     }
   }
 ]

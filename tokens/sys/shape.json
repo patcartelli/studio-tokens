@@ -1,0 +1,11 @@
+{
+  "shape": {
+    "corner-none": { "value": "0px", "type": "borderRadius" },
+    "corner-extra-small": { "value": "4px", "type": "borderRadius" },
+    "corner-small": { "value": "8px", "type": "borderRadius" },
+    "corner-medium": { "value": "12px", "type": "borderRadius" },
+    "corner-large": { "value": "16px", "type": "borderRadius" },
+    "corner-extra-large": { "value": "28px", "type": "borderRadius" },
+    "corner-full": { "value": "9999px", "type": "borderRadius", "description": "Pill/circular — use for fully-rounded controls" }
+  }
+}

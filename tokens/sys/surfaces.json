@@ -2,27 +2,27 @@
   "surfaces": {
     "tint": {
       "opacity-05": {
-        "value": "rgba({sys.surface-tint}, 0.05)",
+        "value": "rgba({Schemes.surface-tint}, 0.05)",
         "type": "color",
         "description": "Surface tint at elevation level 1"
       },
       "opacity-08": {
-        "value": "rgba({sys.surface-tint}, 0.08)",
+        "value": "rgba({Schemes.surface-tint}, 0.08)",
         "type": "color",
         "description": "Surface tint at elevation level 2"
       },
       "opacity-11": {
-        "value": "rgba({sys.surface-tint}, 0.11)",
+        "value": "rgba({Schemes.surface-tint}, 0.11)",
         "type": "color",
         "description": "Surface tint at elevation level 3"
       },
       "opacity-12": {
-        "value": "rgba({sys.surface-tint}, 0.12)",
+        "value": "rgba({Schemes.surface-tint}, 0.12)",
         "type": "color",
         "description": "Surface tint at elevation level 4"
       },
       "opacity-14": {
-        "value": "rgba({sys.surface-tint}, 0.14)",
+        "value": "rgba({Schemes.surface-tint}, 0.14)",
         "type": "color",
         "description": "Surface tint at elevation level 5"
       }

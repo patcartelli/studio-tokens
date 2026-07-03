@@ -1,4 +1,46 @@
 {
+  "Studio Cartelli": {
+    "number-emphasis": {
+      "value": "{ref.tertiary.60}",
+      "type": "color",
+      "description": "Gold for emphasized stat numbers \u2014 passes AA only at large-text sizes (>=24px or 19px bold)"
+    },
+    "number-marker": {
+      "value": "{ref.tertiary.80}",
+      "type": "color",
+      "description": "Bright yellow highlighter background behind ink numbers \u2014 decorative, pair with on-surface text"
+    },
+    "surface-footer": {
+      "value": "{ref.neutral.20}",
+      "type": "color",
+      "description": "Footer background \u2014 intentionally fixed dark, does not flip with site theme"
+    },
+    "on-surface-footer": {
+      "value": "{ref.neutral.95}",
+      "type": "color",
+      "description": "Footer text \u2014 fixed light, pairs with the fixed-dark footer surface"
+    },
+    "footer-link": {
+      "value": "{ref.tertiary.80}",
+      "type": "color",
+      "description": "Footer link color \u2014 fixed bright yellow (tertiary key color), does not flip"
+    },
+    "on-surface-footer-muted": {
+      "value": "{ref.neutral.40}",
+      "type": "color",
+      "description": "Muted decorative text on footer (large name treatment) \u2014 ~2:1 by design"
+    },
+    "on-surface-footer-copyright": {
+      "value": "{ref.neutral.70}",
+      "type": "color",
+      "description": "Copyright text \u2014 >=4.5:1 on inverse-surface in light scheme"
+    },
+    "border-footer": {
+      "value": "{ref.neutral.30}",
+      "type": "color",
+      "description": "Subtle border on footer \u2014 ~1.4:1 hairline by design"
+    }
+  },
   "space": {
     "2xs": {
       "value": "4px",
@@ -76,49 +118,7 @@
     "body-relaxed": {
       "value": "165%",
       "type": "lineHeights",
-      "description": "Studio Cartelli extension — relaxed prose line-height"
-    }
-  },
-  "color": {
-    "number-emphasis": {
-      "value": "{ref.tertiary.60}",
-      "type": "color",
-      "description": "Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold)"
-    },
-    "number-marker": {
-      "value": "{ref.tertiary.80}",
-      "type": "color",
-      "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text"
-    },
-    "surface-footer": {
-      "value": "{ref.neutral.20}",
-      "type": "color",
-      "description": "Footer background — intentionally fixed dark, does not flip with site theme"
-    },
-    "on-surface-footer": {
-      "value": "{ref.neutral.95}",
-      "type": "color",
-      "description": "Footer text — fixed light, pairs with the fixed-dark footer surface"
-    },
-    "footer-link": {
-      "value": "{ref.tertiary.80}",
-      "type": "color",
-      "description": "Footer link color — fixed bright yellow (tertiary key color), does not flip"
-    },
-    "on-surface-footer-muted": {
-      "value": "{ref.neutral.40}",
-      "type": "color",
-      "description": "Muted decorative text on footer (large name treatment) — ~2:1 by design"
-    },
-    "on-surface-footer-copyright": {
-      "value": "{ref.neutral.70}",
-      "type": "color",
-      "description": "Copyright text — >=4.5:1 on inverse-surface in light scheme"
-    },
-    "border-footer": {
-      "value": "{ref.neutral.30}",
-      "type": "color",
-      "description": "Subtle border on footer — ~1.4:1 hairline by design"
+      "description": "Studio Cartelli extension \u2014 relaxed prose line-height"
     }
   },
   "shadow": {

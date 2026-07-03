@@ -142,6 +142,13 @@
   --md-ref-key-color-primary: #181818; /** Graphite seed — generates the primary ramp */
   --md-ref-key-color-tertiary: #f5c542; /** Brand yellow seed — generates the tertiary ramp */
   --md-ref-source-seed: #181818; /** Original Material Theme Builder source color (neutrals/secondary derive from its Figma export) */
+  --md-sys-shape-corner-none: 0px;
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small: 8px;
+  --md-sys-shape-corner-medium: 12px;
+  --md-sys-shape-corner-large: 16px;
+  --md-sys-shape-corner-extra-large: 28px;
+  --md-sys-shape-corner-full: 9999px; /** Pill/circular — use for fully-rounded controls */
   --md-sys-typescale-display-large-size: clamp(var(--md-sys-typescale-display-large-size-compact), 5.5vw, 57px);
   --md-sys-typescale-display-large-line-height: 1.12;
   --md-sys-typescale-display-large-tracking: -0.25px;

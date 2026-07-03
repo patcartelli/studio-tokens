@@ -1,5 +1,5 @@
 {
-  "sys": {
+  "Schemes": {
     "primary": {
       "value": "{ref.primary.80}",
       "type": "color"
@@ -145,7 +145,7 @@
       "type": "color"
     },
     "surface-tint": {
-      "value": "{sys.primary}",
+      "value": "{Schemes.primary}",
       "type": "color"
     }
   }

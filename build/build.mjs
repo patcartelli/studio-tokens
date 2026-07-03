@@ -17,14 +17,16 @@ const tmp = join(root, 'dist', 'tmp');
 
 register(StyleDictionary);
 
-// Token source files are rooted at flat, MTB-style groups (typescale, sys, ref,
-// white/black, key-colors, source, surfaces, state-layers) instead of the deeper
-// md.sys.*/md.ref.* nesting — so Tokens Studio/Figma groups them as shallow
-// siblings (matching how Material Theme Builder itself organizes a kit) rather
-// than three levels deep under a repeated "md" root. This transform reconstructs
-// the spec-correct "--md-sys-*"/"--md-ref-*" CSS variable name from each token's
-// original path (token.path, set before any name transform runs), so the built
-// CSS is byte-identical either way — only the Figma-facing token path changed.
+// Token source files are rooted at flat, MTB-style groups (typescale, Schemes,
+// ref, white/black, key-colors, source, surfaces, State Layers, shape, Studio
+// Cartelli) instead of the deeper md.sys.*/md.ref.* nesting — so Tokens Studio/
+// Figma groups them as shallow siblings (matching Material Theme Builder's own
+// kit organization: Schemes / State Layers / Add-ons as flat groups) rather than
+// three levels deep under a repeated "md" root. This transform reconstructs the
+// spec-correct "--md-sys-*"/"--md-ref-*"/legacy "--color-*" CSS variable name
+// from each token's original path (token.path, set before any name transform
+// runs), so the built CSS is byte-identical either way — only the Figma-facing
+// token path changed.
 StyleDictionary.registerTransform({
   name: 'name/m3-remap',
   type: 'name',
@@ -41,7 +43,7 @@ StyleDictionary.registerTransform({
           .replace(/-font-weight$/, '-weight')
           .replace(/-letter-spacing$/, '-tracking')
           .replace(/-font-family$/, '-font');
-      case 'sys':
+      case 'Schemes':
         return j(['md', 'sys', 'color', ...p.slice(1)]);
       case 'ref':
         return j(['md', 'ref', 'palette', ...p.slice(1)]);
@@ -54,8 +56,12 @@ StyleDictionary.registerTransform({
         return j(['md', 'ref', ...p]);
       case 'surfaces':
         return j(['md', 'sys', 'surface', ...p.slice(1)]);
-      case 'state-layers':
+      case 'State Layers':
         return j(['md', 'sys', 'state', ...p.slice(1)]);
+      case 'shape':
+        return j(['md', 'sys', ...p]);
+      case 'Studio Cartelli':
+        return j(['color', ...p.slice(1)]);
       default:
         return token.name; // already kebab-cased by name/kebab (typeface, sc/extended)
     }
@@ -76,6 +82,7 @@ const light = new StyleDictionary({
     'tokens/sys/color.light.json',
     'tokens/sys/state.json',
     'tokens/sys/surfaces.json',
+    'tokens/sys/shape.json',
     'tokens/sys/typescale.json',
     'tokens/sc/extended.json',
   ].map((p) => join(root, p)),
