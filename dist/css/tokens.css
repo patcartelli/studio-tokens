@@ -208,9 +208,6 @@
   --grid-gap-medium: 24px;
   --callout-border-width: 4px;
   --lh-body-relaxed: 1.65; /** Studio Cartelli extension — relaxed prose line-height */
-  --color-on-surface-footer-muted: #555555; /** Muted text on dark footer (large name treatment) — no M3 role */
-  --color-on-surface-footer-copyright: #8a8a8a; /** Copyright text — meets 4.5:1 on inverse-surface */
-  --color-border-footer: #333333; /** Subtle border on dark footer — no M3 role */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.12); /** Studio Cartelli card shadow (kept alongside M3 elevation levels) */
   --md-sys-color-primary: var(--md-ref-palette-primary-20); /** Brand deviation: tone 20 (true graphite) instead of spec tone 40, which reads as mid-gray. Contrast with on-primary only improves. */
   --md-sys-color-on-primary: var(--md-ref-palette-primary-100);
@@ -280,6 +277,9 @@
   --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
   --color-number-emphasis: var(--md-ref-palette-tertiary-60); /** Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold) */
   --color-number-marker: var(--md-ref-palette-tertiary-80); /** Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text */
+  --color-on-surface-footer-muted: var(--md-ref-palette-neutral-40); /** Muted decorative text on footer (large name treatment) — ~2:1 by design */
+  --color-on-surface-footer-copyright: var(--md-ref-palette-neutral-70); /** Copyright text — >=4.5:1 on inverse-surface in light scheme */
+  --color-border-footer: var(--md-ref-palette-neutral-30); /** Subtle border on footer — ~1.4:1 hairline by design */
   --md-sys-color-surface-tint: var(--md-sys-color-primary);
   --md-sys-state-primary-opacity-08: rgba(49, 48, 48, 0.08); /** hover state layer over primary */
   --md-sys-state-primary-opacity-10: rgba(49, 48, 48, 0.10); /** focus state layer over primary */
@@ -559,5 +559,8 @@
   --md-sys-surface-tint-opacity-14: rgba(200, 198, 197, 0.14); /** Surface tint at elevation level 5 */
   --color-number-emphasis: #f0c03e; /** Full bright yellow works as text on dark surfaces */
   --color-number-marker: #594400; /** Deep gold marker for dark scheme — pair with on-surface text */
+  --color-on-surface-footer-muted: #8e9192; /** Footer flips light in dark scheme (inverse-surface = N90) — muted text darkens */
+  --color-on-surface-footer-copyright: #5c5f5f; /** >=4.5:1 on the light dark-scheme footer */
+  --color-border-footer: #c4c7c7; /** Hairline on light dark-scheme footer */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.4); /** Stronger card shadow for dark theme */
 }

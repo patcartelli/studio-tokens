@@ -45,15 +45,13 @@ dist/css/compat.css      Legacy-name shim (--color-surface → --md-sys-color-su
 
 Replaces the `:root` token block (and the `--container-padding`/`--grid-gap` media query) in `global.css`. The site's `data-theme="dark"` toggle works unchanged. Update = tag a release here, bump the pinned tag there.
 
-## Tokens Studio setup
+## Tokens Studio workflow (Pro)
 
-1. **Install** the "Tokens Studio for Figma" plugin (free tier is fine).
-2. **PAT**: GitHub → Settings → Developer settings → Fine-grained tokens → new token scoped to this repo with **Contents: Read and write**.
-3. **Add sync provider** in the plugin (Settings → Sync providers → GitHub): repository `patcartelli/studio-tokens`, branch `main`, token storage location `tokens` (the directory — this enables multi-file mode).
-4. **Pull** — the set list should show `ref/palette`, `ref/typeface`, `sys/color.light`, `sys/color.dark`, `sys/typescale`, `sc/extended`, `sc/extended.dark`.
-5. **Import your Figma color variables** into `ref/palette` (Tools → Import variables), naming tones to match the alias targets: `md.ref.palette.primary.40`, `md.ref.palette.neutral.98`, etc. Broken-reference indicators disappearing in the `sys/` sets confirm the wiring.
-6. **Push** to `main` — CI rebuilds and verifies.
-7. **Light/dark preview** (free tier): toggle enabled sets manually — `sys/color.light` ⇄ `sys/color.dark` (+ `sc/extended.dark`). The Themes tab is a Pro feature; `$themes.json` drives the build regardless.
+1. **Sync provider** (Settings → Sync providers → GitHub): fine-grained PAT scoped to this repo (Contents: Read and write), repository `patcartelli/studio-tokens`, branch **`main`**, token storage location `tokens` (the directory — multi-file mode). The `figma-import` branch is historical (raw Material Theme Builder export) — never point the plugin at it.
+2. **Themes dropdown** (top-left): the `scheme` group holds `light`/`dark` from `$themes.json` — one-click scheme switching.
+3. **Edit loop**: pull before editing → edit tokens → push to `main` → CI rebuilds `dist/` and gates on WCAG AA contrast + drift.
+4. **Export to Figma** (Styles & Variables → Export): themes `light`+`dark` → one `scheme` variable collection with both modes. Settings: variables all on; styles Typography + Effects only (color styles are redundant next to variables); "Create styles with variable references" ON; "Update existing style and variable names" ON; "Remove styles and variables without connection to a token" ON once the file contains no hand-made styles worth keeping.
+5. **Push after every export** — the plugin stamps Figma collection/mode IDs into `$themes.json`; committing them makes future exports update the same collection instead of creating duplicates.
 
 ## Naming notes
 

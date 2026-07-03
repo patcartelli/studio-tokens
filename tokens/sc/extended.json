@@ -1,38 +1,110 @@
 {
   "space": {
-    "2xs": { "value": "4px", "type": "spacing" },
-    "xs": { "value": "8px", "type": "spacing" },
-    "sm": { "value": "16px", "type": "spacing" },
-    "md": { "value": "24px", "type": "spacing" },
-    "lg": { "value": "48px", "type": "spacing" },
-    "xl": { "value": "80px", "type": "spacing" },
-    "2xl": { "value": "120px", "type": "spacing" }
+    "2xs": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "xs": {
+      "value": "8px",
+      "type": "spacing"
+    },
+    "sm": {
+      "value": "16px",
+      "type": "spacing"
+    },
+    "md": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "lg": {
+      "value": "48px",
+      "type": "spacing"
+    },
+    "xl": {
+      "value": "80px",
+      "type": "spacing"
+    },
+    "2xl": {
+      "value": "120px",
+      "type": "spacing"
+    }
   },
   "container": {
-    "max": { "value": "1080px", "type": "sizing" },
-    "max-xl": { "value": "1280px", "type": "sizing" },
-    "padding-compact": { "value": "16px", "type": "spacing", "description": "MD3 compact window margin (<600px)" },
-    "padding-medium": { "value": "24px", "type": "spacing", "description": "MD3 medium+ window margin (>=600px)" }
+    "max": {
+      "value": "1080px",
+      "type": "sizing"
+    },
+    "max-xl": {
+      "value": "1280px",
+      "type": "sizing"
+    },
+    "padding-compact": {
+      "value": "16px",
+      "type": "spacing",
+      "description": "MD3 compact window margin (<600px)"
+    },
+    "padding-medium": {
+      "value": "24px",
+      "type": "spacing",
+      "description": "MD3 medium+ window margin (>=600px)"
+    }
   },
   "measure": {
-    "prose": { "value": "65ch", "type": "other", "description": "Max line length for readable prose columns" }
+    "prose": {
+      "value": "65ch",
+      "type": "other",
+      "description": "Max line length for readable prose columns"
+    }
   },
   "grid": {
-    "gap-compact": { "value": "16px", "type": "spacing" },
-    "gap-medium": { "value": "24px", "type": "spacing" }
+    "gap-compact": {
+      "value": "16px",
+      "type": "spacing"
+    },
+    "gap-medium": {
+      "value": "24px",
+      "type": "spacing"
+    }
   },
   "callout": {
-    "border-width": { "value": "4px", "type": "borderWidth" }
+    "border-width": {
+      "value": "4px",
+      "type": "borderWidth"
+    }
   },
   "lh": {
-    "body-relaxed": { "value": "165%", "type": "lineHeights", "description": "Studio Cartelli extension — relaxed prose line-height" }
+    "body-relaxed": {
+      "value": "165%",
+      "type": "lineHeights",
+      "description": "Studio Cartelli extension \u2014 relaxed prose line-height"
+    }
   },
   "color": {
-    "number-emphasis": { "value": "{md.ref.palette.tertiary.60}", "type": "color", "description": "Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold)" },
-    "number-marker": { "value": "{md.ref.palette.tertiary.80}", "type": "color", "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text" },
-    "on-surface-footer-muted": { "value": "#555555", "type": "color", "description": "Muted text on dark footer (large name treatment) — no M3 role" },
-    "on-surface-footer-copyright": { "value": "#8a8a8a", "type": "color", "description": "Copyright text — meets 4.5:1 on inverse-surface" },
-    "border-footer": { "value": "#333333", "type": "color", "description": "Subtle border on dark footer — no M3 role" }
+    "number-emphasis": {
+      "value": "{md.ref.palette.tertiary.60}",
+      "type": "color",
+      "description": "Gold for emphasized stat numbers \u2014 passes AA only at large-text sizes (>=24px or 19px bold)"
+    },
+    "number-marker": {
+      "value": "{md.ref.palette.tertiary.80}",
+      "type": "color",
+      "description": "Bright yellow highlighter background behind ink numbers \u2014 decorative, pair with on-surface text"
+    },
+    "on-surface-footer-muted": {
+      "value": "{md.ref.palette.neutral.40}",
+      "type": "color",
+      "description": "Muted decorative text on footer (large name treatment) \u2014 ~2:1 by design"
+    },
+    "on-surface-footer-copyright": {
+      "value": "{md.ref.palette.neutral.70}",
+      "type": "color",
+      "description": "Copyright text \u2014 >=4.5:1 on inverse-surface in light scheme"
+    },
+    "border-footer": {
+      "value": "{md.ref.palette.neutral.30}",
+      "type": "color",
+      "description": "Subtle border on footer \u2014 ~1.4:1 hairline by design"
+    }
   },
   "shadow": {
     "card": {
@@ -54,36 +126,106 @@
         "level1": {
           "type": "boxShadow",
           "value": [
-            { "x": "0px", "y": "1px", "blur": "2px", "spread": "0px", "color": "rgba(0,0,0,0.30)", "type": "dropShadow" },
-            { "x": "0px", "y": "1px", "blur": "3px", "spread": "1px", "color": "rgba(0,0,0,0.15)", "type": "dropShadow" }
+            {
+              "x": "0px",
+              "y": "1px",
+              "blur": "2px",
+              "spread": "0px",
+              "color": "rgba(0,0,0,0.30)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0px",
+              "y": "1px",
+              "blur": "3px",
+              "spread": "1px",
+              "color": "rgba(0,0,0,0.15)",
+              "type": "dropShadow"
+            }
           ]
         },
         "level2": {
           "type": "boxShadow",
           "value": [
-            { "x": "0px", "y": "1px", "blur": "2px", "spread": "0px", "color": "rgba(0,0,0,0.30)", "type": "dropShadow" },
-            { "x": "0px", "y": "2px", "blur": "6px", "spread": "2px", "color": "rgba(0,0,0,0.15)", "type": "dropShadow" }
+            {
+              "x": "0px",
+              "y": "1px",
+              "blur": "2px",
+              "spread": "0px",
+              "color": "rgba(0,0,0,0.30)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0px",
+              "y": "2px",
+              "blur": "6px",
+              "spread": "2px",
+              "color": "rgba(0,0,0,0.15)",
+              "type": "dropShadow"
+            }
           ]
         },
         "level3": {
           "type": "boxShadow",
           "value": [
-            { "x": "0px", "y": "1px", "blur": "3px", "spread": "0px", "color": "rgba(0,0,0,0.30)", "type": "dropShadow" },
-            { "x": "0px", "y": "4px", "blur": "8px", "spread": "3px", "color": "rgba(0,0,0,0.15)", "type": "dropShadow" }
+            {
+              "x": "0px",
+              "y": "1px",
+              "blur": "3px",
+              "spread": "0px",
+              "color": "rgba(0,0,0,0.30)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0px",
+              "y": "4px",
+              "blur": "8px",
+              "spread": "3px",
+              "color": "rgba(0,0,0,0.15)",
+              "type": "dropShadow"
+            }
           ]
         },
         "level4": {
           "type": "boxShadow",
           "value": [
-            { "x": "0px", "y": "2px", "blur": "3px", "spread": "0px", "color": "rgba(0,0,0,0.30)", "type": "dropShadow" },
-            { "x": "0px", "y": "6px", "blur": "10px", "spread": "4px", "color": "rgba(0,0,0,0.15)", "type": "dropShadow" }
+            {
+              "x": "0px",
+              "y": "2px",
+              "blur": "3px",
+              "spread": "0px",
+              "color": "rgba(0,0,0,0.30)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0px",
+              "y": "6px",
+              "blur": "10px",
+              "spread": "4px",
+              "color": "rgba(0,0,0,0.15)",
+              "type": "dropShadow"
+            }
           ]
         },
         "level5": {
           "type": "boxShadow",
           "value": [
-            { "x": "0px", "y": "4px", "blur": "4px", "spread": "0px", "color": "rgba(0,0,0,0.30)", "type": "dropShadow" },
-            { "x": "0px", "y": "8px", "blur": "12px", "spread": "6px", "color": "rgba(0,0,0,0.15)", "type": "dropShadow" }
+            {
+              "x": "0px",
+              "y": "4px",
+              "blur": "4px",
+              "spread": "0px",
+              "color": "rgba(0,0,0,0.30)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0px",
+              "y": "8px",
+              "blur": "12px",
+              "spread": "6px",
+              "color": "rgba(0,0,0,0.15)",
+              "type": "dropShadow"
+            }
           ]
         }
       }

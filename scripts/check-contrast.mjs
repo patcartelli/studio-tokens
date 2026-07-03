@@ -59,15 +59,21 @@ const PAIRS = [
   ['inverse-on-surface', 'inverse-surface'],
 ];
 
+// Site-specific pairs checked by full variable name
+const EXTRA_PAIRS = [
+  ['--color-on-surface-footer-copyright', '--md-sys-color-inverse-surface'],
+];
+
 const THRESHOLD = 4.5;
 let failures = 0;
 
 for (const [scheme, vars] of [['light', lightVars], ['dark', darkVars]]) {
-  for (const [fg, bg] of PAIRS) {
-    const r = ratio(
-      resolve(`--md-sys-color-${fg}`, vars),
-      resolve(`--md-sys-color-${bg}`, vars)
-    );
+  for (const [fgVar, bgVar] of [
+    ...PAIRS.map(([fg, bg]) => [`--md-sys-color-${fg}`, `--md-sys-color-${bg}`]),
+    ...EXTRA_PAIRS,
+  ]) {
+    const [fg, bg] = [fgVar.replace('--md-sys-color-', ''), bgVar.replace('--md-sys-color-', '')];
+    const r = ratio(resolve(fgVar, vars), resolve(bgVar, vars));
     const ok = r >= THRESHOLD;
     if (!ok) failures++;
     console.log(
