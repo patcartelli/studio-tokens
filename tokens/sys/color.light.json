@@ -2,7 +2,7 @@
   "md": {
     "sys": {
       "color": {
-        "primary": { "value": "{md.ref.palette.primary.40}", "type": "color" },
+        "primary": { "value": "{md.ref.palette.primary.20}", "type": "color", "description": "Brand deviation: tone 20 (true graphite) instead of spec tone 40, which reads as mid-gray. Contrast with on-primary only improves." },
         "on-primary": { "value": "{md.ref.palette.primary.100}", "type": "color" },
         "primary-container": { "value": "{md.ref.palette.primary.90}", "type": "color" },
         "on-primary-container": { "value": "{md.ref.palette.primary.30}", "type": "color" },

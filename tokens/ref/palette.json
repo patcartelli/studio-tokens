@@ -8,67 +8,67 @@
             "type": "color"
           },
           "5": {
-            "value": "#001417",
+            "value": "#111111",
             "type": "color"
           },
           "10": {
-            "value": "#001f24",
+            "value": "#1c1b1b",
             "type": "color"
           },
           "15": {
-            "value": "#002b30",
+            "value": "#262626",
             "type": "color"
           },
           "20": {
-            "value": "#00363d",
+            "value": "#313030",
             "type": "color"
           },
           "25": {
-            "value": "#00424a",
+            "value": "#3c3b3b",
             "type": "color"
           },
           "30": {
-            "value": "#004f58",
+            "value": "#474746",
             "type": "color"
           },
           "35": {
-            "value": "#005b66",
+            "value": "#535252",
             "type": "color"
           },
           "40": {
-            "value": "#006874",
+            "value": "#5f5e5e",
             "type": "color"
           },
           "50": {
-            "value": "#008391",
+            "value": "#787776",
             "type": "color"
           },
           "60": {
-            "value": "#00a0b0",
+            "value": "#929090",
             "type": "color"
           },
           "70": {
-            "value": "#22bccf",
+            "value": "#adabaa",
             "type": "color"
           },
           "80": {
-            "value": "#4fd8eb",
+            "value": "#c8c6c5",
             "type": "color"
           },
           "90": {
-            "value": "#97f0ff",
+            "value": "#e5e2e1",
             "type": "color"
           },
           "95": {
-            "value": "#d0f8ff",
+            "value": "#f3f0ef",
             "type": "color"
           },
           "98": {
-            "value": "#edfcff",
+            "value": "#fcf9f8",
             "type": "color"
           },
           "99": {
-            "value": "#f6feff",
+            "value": "#fffbfb",
             "type": "color"
           },
           "100": {

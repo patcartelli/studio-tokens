@@ -20,7 +20,7 @@ dist/css/compat.css      Legacy-name shim (--color-surface → --md-sys-color-su
 
 `dist/` is committed; CI fails if it drifts from a fresh build.
 
-> **Palette provenance:** neutral, neutral-variant, secondary, tertiary, and error ramps come from the Figma Material Theme Builder export (see the `figma-import` branch); missing neutral surface-container tones were backfilled from the export's resolved scheme values. The **primary palette is reseeded from the site's yellow `#f5c542`** via Material Color Utilities. `npm run generate:palettes -- '#RRGGBB'` regenerates all ramps from a single seed if ever needed.
+> **Palette provenance:** neutral, neutral-variant, secondary, and error ramps come from the Figma Material Theme Builder export (see the `figma-import` branch); missing neutral surface-container tones were backfilled from the export's resolved scheme values. **Primary is graphite** (generated from `#181818`, the original Figma key color) with a documented deviation: light-scheme `primary` renders at tone 20, not spec tone 40. **Tertiary is the brand yellow** (generated from `#f5c542`); it powers `--color-accent` (tone 80, fixed), `--color-accent-text` (sys tertiary), and the `--color-number-emphasis` / `--color-number-marker` stat treatments. `npm run generate:palettes -- '#RRGGBB'` regenerates all ramps from a single seed if ever needed.
 
 ## Commands
 

@@ -9,22 +9,22 @@
 
 :root {
   --md-ref-palette-primary-0: #000000;
-  --md-ref-palette-primary-5: #001417;
-  --md-ref-palette-primary-10: #001f24;
-  --md-ref-palette-primary-15: #002b30;
-  --md-ref-palette-primary-20: #00363d;
-  --md-ref-palette-primary-25: #00424a;
-  --md-ref-palette-primary-30: #004f58;
-  --md-ref-palette-primary-35: #005b66;
-  --md-ref-palette-primary-40: #006874;
-  --md-ref-palette-primary-50: #008391;
-  --md-ref-palette-primary-60: #00a0b0;
-  --md-ref-palette-primary-70: #22bccf;
-  --md-ref-palette-primary-80: #4fd8eb;
-  --md-ref-palette-primary-90: #97f0ff;
-  --md-ref-palette-primary-95: #d0f8ff;
-  --md-ref-palette-primary-98: #edfcff;
-  --md-ref-palette-primary-99: #f6feff;
+  --md-ref-palette-primary-5: #111111;
+  --md-ref-palette-primary-10: #1c1b1b;
+  --md-ref-palette-primary-15: #262626;
+  --md-ref-palette-primary-20: #313030;
+  --md-ref-palette-primary-25: #3c3b3b;
+  --md-ref-palette-primary-30: #474746;
+  --md-ref-palette-primary-35: #535252;
+  --md-ref-palette-primary-40: #5f5e5e;
+  --md-ref-palette-primary-50: #787776;
+  --md-ref-palette-primary-60: #929090;
+  --md-ref-palette-primary-70: #adabaa;
+  --md-ref-palette-primary-80: #c8c6c5;
+  --md-ref-palette-primary-90: #e5e2e1;
+  --md-ref-palette-primary-95: #f3f0ef;
+  --md-ref-palette-primary-98: #fcf9f8;
+  --md-ref-palette-primary-99: #fffbfb;
   --md-ref-palette-primary-100: #ffffff;
   --md-ref-palette-secondary-0: #000000;
   --md-ref-palette-secondary-5: #001417;
@@ -207,7 +207,7 @@
   --color-on-surface-footer-copyright: #8a8a8a; /** Copyright text — meets 4.5:1 on inverse-surface */
   --color-border-footer: #333333; /** Subtle border on dark footer — no M3 role */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.12); /** Studio Cartelli card shadow (kept alongside M3 elevation levels) */
-  --md-sys-color-primary: var(--md-ref-palette-primary-40);
+  --md-sys-color-primary: var(--md-ref-palette-primary-20); /** Brand deviation: tone 20 (true graphite) instead of spec tone 40, which reads as mid-gray. Contrast with on-primary only improves. */
   --md-sys-color-on-primary: var(--md-ref-palette-primary-100);
   --md-sys-color-primary-container: var(--md-ref-palette-primary-90);
   --md-sys-color-on-primary-container: var(--md-ref-palette-primary-30);
@@ -273,6 +273,8 @@
   --md-sys-typescale-label-medium-weight: var(--md-ref-typeface-weight-medium);
   --md-sys-typescale-label-small-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
+  --color-number-emphasis: var(--md-ref-palette-tertiary-60); /** Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold) */
+  --color-number-marker: var(--md-ref-palette-tertiary-80); /** Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text */
 }
 
 /**
@@ -280,10 +282,10 @@
  */
 
 :root[data-theme="dark"] {
-  --md-sys-color-primary: #4fd8eb;
-  --md-sys-color-on-primary: #00363d;
-  --md-sys-color-primary-container: #004f58;
-  --md-sys-color-on-primary-container: #97f0ff;
+  --md-sys-color-primary: #c8c6c5;
+  --md-sys-color-on-primary: #313030;
+  --md-sys-color-primary-container: #474746;
+  --md-sys-color-on-primary-container: #e5e2e1;
   --md-sys-color-secondary: #b1cbd0;
   --md-sys-color-on-secondary: #1c3438;
   --md-sys-color-secondary-container: #334b4f;
@@ -311,10 +313,12 @@
   --md-sys-color-outline-variant: #3f484a;
   --md-sys-color-inverse-surface: #e1e3e3;
   --md-sys-color-inverse-on-surface: #2e3132;
-  --md-sys-color-inverse-primary: #006874;
+  --md-sys-color-inverse-primary: #5f5e5e;
   --md-sys-color-background: #0e1415;
   --md-sys-color-on-background: #e1e3e3;
   --md-sys-color-scrim: #000000;
   --md-sys-color-shadow: #000000;
+  --color-number-emphasis: #f0c03e; /** Full bright yellow works as text on dark surfaces */
+  --color-number-marker: #594400; /** Deep gold marker for dark scheme — pair with on-surface text */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.4); /** Stronger card shadow for dark theme */
 }
