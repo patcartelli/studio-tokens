@@ -1,0 +1,31 @@
+{
+  "md": {
+    "ref": {
+      "typeface": {
+        "brand": {
+          "value": "Polymath Display, Georgia, serif",
+          "type": "fontFamilies",
+          "description": "Display/headline typeface"
+        },
+        "plain": {
+          "value": "Polymath Text, Inter, system-ui, -apple-system, sans-serif",
+          "type": "fontFamilies",
+          "description": "Body/title/label typeface"
+        },
+        "mono": {
+          "value": "DM Mono, ui-monospace, Cascadia Code, Fira Code, monospace",
+          "type": "fontFamilies",
+          "description": "Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain)"
+        },
+        "weight-regular": {
+          "value": "400",
+          "type": "fontWeights"
+        },
+        "weight-medium": {
+          "value": "500",
+          "type": "fontWeights"
+        }
+      }
+    }
+  }
+}

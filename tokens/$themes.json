@@ -1,0 +1,25 @@
+[
+  {
+    "id": "light",
+    "name": "light",
+    "selectedTokenSets": {
+      "ref/palette": "source",
+      "ref/typeface": "source",
+      "sys/color.light": "enabled",
+      "sys/typescale": "enabled",
+      "sc/extended": "enabled"
+    }
+  },
+  {
+    "id": "dark",
+    "name": "dark",
+    "selectedTokenSets": {
+      "ref/palette": "source",
+      "ref/typeface": "source",
+      "sys/color.dark": "enabled",
+      "sys/typescale": "enabled",
+      "sc/extended": "enabled",
+      "sc/extended.dark": "enabled"
+    }
+  }
+]

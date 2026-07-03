@@ -1,0 +1,16 @@
+{
+  "shadow": {
+    "card": {
+      "type": "boxShadow",
+      "value": {
+        "x": "0px",
+        "y": "8px",
+        "blur": "32px",
+        "spread": "0px",
+        "color": "rgba(0,0,0,0.4)",
+        "type": "dropShadow"
+      },
+      "description": "Stronger card shadow for dark theme"
+    }
+  }
+}

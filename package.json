@@ -1,0 +1,28 @@
+{
+  "name": "studio-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Studio Cartelli — Material 3 token architecture, synced with Tokens Studio, built with Style Dictionary.",
+  "type": "module",
+  "files": [
+    "dist",
+    "tokens"
+  ],
+  "exports": {
+    "./css/tokens.css": "./dist/css/tokens.css",
+    "./css/compat.css": "./dist/css/compat.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node build/build.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "generate:palettes": "node scripts/generate-palettes.mjs",
+    "verify": "npm run build && npm run check:contrast && git diff --exit-code -- dist"
+  },
+  "repository": "github:patcartelli/studio-tokens",
+  "license": "MIT",
+  "devDependencies": {
+    "@material/material-color-utilities": "^0.3.0",
+    "@tokens-studio/sd-transforms": "^1.2.9",
+    "style-dictionary": "^4.3.0"
+  }
+}

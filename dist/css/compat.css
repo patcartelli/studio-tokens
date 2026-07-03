@@ -1,0 +1,80 @@
+/**
+ * studio-tokens compatibility shim.
+ *
+ * Maps studio-cartelli's legacy custom-property names onto M3 system tokens.
+ * Import AFTER tokens.css. Delete this file's import once all components
+ * reference --md-sys-* names directly.
+ *
+ * Legacy names that already match their token output 1:1 (--space-*,
+ * --container-max*, --measure-prose, --callout-border-width, --shadow-card,
+ * --color-on-surface-footer-muted, --color-on-surface-footer-copyright,
+ * --color-border-footer) are emitted by tokens.css directly and need no shim.
+ */
+
+:root {
+  /* Colors */
+  --color-surface: var(--md-sys-color-surface);
+  --color-on-surface: var(--md-sys-color-on-surface);
+  --color-on-surface-dimmed: var(--md-sys-color-on-surface-variant);
+  --color-on-surface-muted: var(--md-sys-color-outline);
+  --color-border: var(--md-sys-color-outline-variant);
+  --color-surface-subtle: var(--md-sys-color-surface-container);
+  --color-accent: var(--md-sys-color-primary);
+  --color-accent-text: var(--md-sys-color-on-primary-container);
+  --color-error: var(--md-sys-color-error);
+  --color-surface-footer: var(--md-sys-color-inverse-surface);
+  --color-on-surface-footer: var(--md-sys-color-inverse-on-surface);
+  --color-footer-link: var(--md-sys-color-inverse-primary);
+
+  /* Typography — families */
+  --font-display: var(--md-ref-typeface-brand);
+  --font-body: var(--md-ref-typeface-plain);
+  --font-mono: var(--md-ref-typeface-mono);
+
+  /* Typography — sizes (display sizes resolve to responsive clamp()) */
+  --text-display-large: var(--md-sys-typescale-display-large-size);
+  --text-display-medium: var(--md-sys-typescale-display-medium-size);
+  --text-display-small: var(--md-sys-typescale-display-small-size);
+  --text-headline-large: var(--md-sys-typescale-headline-large-size);
+  --text-headline-medium: var(--md-sys-typescale-headline-medium-size);
+  --text-headline-small: var(--md-sys-typescale-headline-small-size);
+  --text-title-large: var(--md-sys-typescale-title-large-size);
+  --text-title-medium: var(--md-sys-typescale-title-medium-size);
+  --text-title-small: var(--md-sys-typescale-title-small-size);
+  --text-body-large: var(--md-sys-typescale-body-large-size);
+  --text-body-medium: var(--md-sys-typescale-body-medium-size);
+  --text-body-small: var(--md-sys-typescale-body-small-size);
+  --text-label-large: var(--md-sys-typescale-label-large-size);
+  --text-label-medium: var(--md-sys-typescale-label-medium-size);
+  --text-label-small: var(--md-sys-typescale-label-small-size);
+
+  /* Typography — line heights (unitless ratios) */
+  --lh-display-large: var(--md-sys-typescale-display-large-line-height);
+  --lh-display-medium: var(--md-sys-typescale-display-medium-line-height);
+  --lh-display-small: var(--md-sys-typescale-display-small-line-height);
+  --lh-headline-large: var(--md-sys-typescale-headline-large-line-height);
+  --lh-headline-medium: var(--md-sys-typescale-headline-medium-line-height);
+  --lh-headline-small: var(--md-sys-typescale-headline-small-line-height);
+  --lh-title-large: var(--md-sys-typescale-title-large-line-height);
+  --lh-title-medium: var(--md-sys-typescale-title-medium-line-height);
+  --lh-title-small: var(--md-sys-typescale-title-small-line-height);
+  --lh-body-large: var(--md-sys-typescale-body-large-line-height);
+  --lh-body-medium: var(--md-sys-typescale-body-medium-line-height);
+  --lh-body-small: var(--md-sys-typescale-body-small-line-height);
+  --lh-label-large: var(--md-sys-typescale-label-large-line-height);
+  --lh-label-medium: var(--md-sys-typescale-label-medium-line-height);
+  --lh-label-small: var(--md-sys-typescale-label-small-line-height);
+  /* --lh-body-relaxed is emitted directly by tokens.css */
+
+  /* Layout — responsive values (replaces the media query in global.css) */
+  --container-padding: var(--container-padding-compact);
+  --grid-gap: var(--grid-gap-compact);
+}
+
+/* MD3 medium window: >=600px */
+@media (min-width: 600px) {
+  :root {
+    --container-padding: var(--container-padding-medium);
+    --grid-gap: var(--grid-gap-medium);
+  }
+}

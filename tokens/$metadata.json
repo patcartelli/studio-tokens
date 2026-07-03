@@ -1,0 +1,11 @@
+{
+  "tokenSetOrder": [
+    "ref/palette",
+    "ref/typeface",
+    "sys/color.light",
+    "sys/color.dark",
+    "sys/typescale",
+    "sc/extended",
+    "sc/extended.dark"
+  ]
+}
