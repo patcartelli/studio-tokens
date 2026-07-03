@@ -7,8 +7,10 @@
  *
  * Legacy names that already match their token output 1:1 (--space-*,
  * --container-max*, --measure-prose, --callout-border-width, --shadow-card,
- * --color-on-surface-footer-muted, --color-on-surface-footer-copyright,
- * --color-border-footer) are emitted by tokens.css directly and need no shim.
+ * and the whole footer family — --color-surface-footer, --color-on-surface-footer,
+ * --color-footer-link, --color-on-surface-footer-muted, --color-on-surface-footer-copyright,
+ * --color-border-footer — which is intentionally fixed-dark and does not flip with
+ * the theme) are emitted by tokens.css directly and need no shim.
  */
 
 :root {
@@ -24,9 +26,6 @@
   --color-accent: var(--md-ref-palette-tertiary-80);
   --color-accent-text: var(--md-sys-color-tertiary);
   --color-error: var(--md-sys-color-error);
-  --color-surface-footer: var(--md-sys-color-inverse-surface);
-  --color-on-surface-footer: var(--md-sys-color-inverse-on-surface);
-  --color-footer-link: var(--md-sys-color-inverse-primary);
 
   /* Typography — families */
   --font-display: var(--md-ref-typeface-brand);

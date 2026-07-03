@@ -59,9 +59,12 @@ const PAIRS = [
   ['inverse-on-surface', 'inverse-surface'],
 ];
 
-// Site-specific pairs checked by full variable name
+// Site-specific pairs checked by full variable name — the footer surface is
+// intentionally fixed-dark in both schemes (does not follow inverse-surface).
 const EXTRA_PAIRS = [
-  ['--color-on-surface-footer-copyright', '--md-sys-color-inverse-surface'],
+  ['--color-on-surface-footer', '--color-surface-footer'],
+  ['--color-on-surface-footer-copyright', '--color-surface-footer'],
+  ['--color-footer-link', '--color-surface-footer'],
 ];
 
 const THRESHOLD = 4.5;
@@ -72,7 +75,7 @@ for (const [scheme, vars] of [['light', lightVars], ['dark', darkVars]]) {
     ...PAIRS.map(([fg, bg]) => [`--md-sys-color-${fg}`, `--md-sys-color-${bg}`]),
     ...EXTRA_PAIRS,
   ]) {
-    const [fg, bg] = [fgVar.replace('--md-sys-color-', ''), bgVar.replace('--md-sys-color-', '')];
+    const [fg, bg] = [fgVar.replace(/^--(md-sys-color|color)-/, ''), bgVar.replace(/^--(md-sys-color|color)-/, '')];
     const r = ratio(resolve(fgVar, vars), resolve(bgVar, vars));
     const ok = r >= THRESHOLD;
     if (!ok) failures++;

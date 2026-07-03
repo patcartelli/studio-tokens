@@ -90,6 +90,21 @@
       "type": "color",
       "description": "Bright yellow highlighter background behind ink numbers \u2014 decorative, pair with on-surface text"
     },
+    "surface-footer": {
+      "value": "{md.ref.palette.neutral.20}",
+      "type": "color",
+      "description": "Footer background \u2014 intentionally fixed dark, does not flip with site theme"
+    },
+    "on-surface-footer": {
+      "value": "{md.ref.palette.neutral.95}",
+      "type": "color",
+      "description": "Footer text \u2014 fixed light, pairs with the fixed-dark footer surface"
+    },
+    "footer-link": {
+      "value": "{md.ref.palette.tertiary.80}",
+      "type": "color",
+      "description": "Footer link color \u2014 fixed bright yellow (tertiary key color), does not flip"
+    },
     "on-surface-footer-muted": {
       "value": "{md.ref.palette.neutral.40}",
       "type": "color",

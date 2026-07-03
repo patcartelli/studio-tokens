@@ -59,6 +59,9 @@ Replaces the `:root` token block (and the `--container-padding`/`--grid-gap` med
 - Display sizes compile to `clamp(compact, fluid, spec)` — Figma shows the spec size (57/45/36), CSS stays responsive.
 - Line heights are emitted as unitless ratios (M3 px values ÷ font size), matching how the site applies them.
 - `sc/extended` tokens keep their legacy names in output (`--space-md`, `--container-max`, `--shadow-card`, …) since M3 has no vocabulary for them.
+- The footer palette (`--color-surface-footer`, `--color-on-surface-footer`, `--color-footer-link`, and its muted/copyright/border grays) is **fixed dark in both site themes by design** — it does not alias the M3 `inverse-surface` roles, which intentionally invert per scheme.
+- `--color-footer-link` and `--color-accent` both resolve to the fixed `tertiary.80` reference — the brand yellow key color, unaffected by theme.
+- Polymath's "Regular" cut is weight 500, not 400 — `md.ref.typeface.weight-regular` reflects that; `weight-bold` (700) is available for future use.
 
 ## Releasing
 

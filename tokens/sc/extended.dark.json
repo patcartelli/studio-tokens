@@ -10,21 +10,6 @@
       "type": "color",
       "description": "Deep gold marker for dark scheme \u2014 pair with on-surface text"
     },
-    "on-surface-footer-muted": {
-      "value": "{md.ref.palette.neutral.60}",
-      "type": "color",
-      "description": "Footer flips light in dark scheme (inverse-surface = N90) \u2014 muted text darkens"
-    },
-    "on-surface-footer-copyright": {
-      "value": "{md.ref.palette.neutral.40}",
-      "type": "color",
-      "description": ">=4.5:1 on the light dark-scheme footer"
-    },
-    "border-footer": {
-      "value": "{md.ref.palette.neutral.80}",
-      "type": "color",
-      "description": "Hairline on light dark-scheme footer"
-    }
   },
   "shadow": {
     "card": {

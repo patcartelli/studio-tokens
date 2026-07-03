@@ -131,8 +131,9 @@
   --md-ref-typeface-brand: 'Polymath Display', Georgia, serif; /** Display/headline typeface */
   --md-ref-typeface-plain: 'Polymath Text', Inter, system-ui, -apple-system, sans-serif; /** Body/title/label typeface */
   --md-ref-typeface-mono: 'DM Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace; /** Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain) */
-  --md-ref-typeface-weight-regular: 400;
+  --md-ref-typeface-weight-regular: 500; /** Polymath's "Regular" cut is weight 500 — there is no true 400 in use */
   --md-ref-typeface-weight-medium: 500;
+  --md-ref-typeface-weight-bold: 700; /** Available for emphasis/buttons — M3 typescale roles do not use bold directly */
   --md-ref-key-color-primary: #181818; /** Graphite seed — generates the primary ramp */
   --md-ref-key-color-tertiary: #f5c542; /** Brand yellow seed — generates the tertiary ramp */
   --md-ref-source-seed: #181818; /** Original Material Theme Builder source color (neutrals/secondary derive from its Figma export) */
@@ -277,6 +278,9 @@
   --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
   --color-number-emphasis: var(--md-ref-palette-tertiary-60); /** Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold) */
   --color-number-marker: var(--md-ref-palette-tertiary-80); /** Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text */
+  --color-surface-footer: var(--md-ref-palette-neutral-20); /** Footer background — intentionally fixed dark, does not flip with site theme */
+  --color-on-surface-footer: var(--md-ref-palette-neutral-95); /** Footer text — fixed light, pairs with the fixed-dark footer surface */
+  --color-footer-link: var(--md-ref-palette-tertiary-80); /** Footer link color — fixed bright yellow (tertiary key color), does not flip */
   --color-on-surface-footer-muted: var(--md-ref-palette-neutral-40); /** Muted decorative text on footer (large name treatment) — ~2:1 by design */
   --color-on-surface-footer-copyright: var(--md-ref-palette-neutral-70); /** Copyright text — >=4.5:1 on inverse-surface in light scheme */
   --color-border-footer: var(--md-ref-palette-neutral-30); /** Subtle border on footer — ~1.4:1 hairline by design */
@@ -559,8 +563,5 @@
   --md-sys-surface-tint-opacity-14: rgba(200, 198, 197, 0.14); /** Surface tint at elevation level 5 */
   --color-number-emphasis: #f0c03e; /** Full bright yellow works as text on dark surfaces */
   --color-number-marker: #594400; /** Deep gold marker for dark scheme — pair with on-surface text */
-  --color-on-surface-footer-muted: #8e9192; /** Footer flips light in dark scheme (inverse-surface = N90) — muted text darkens */
-  --color-on-surface-footer-copyright: #5c5f5f; /** >=4.5:1 on the light dark-scheme footer */
-  --color-border-footer: #c4c7c7; /** Hairline on light dark-scheme footer */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.4); /** Stronger card shadow for dark theme */
 }
