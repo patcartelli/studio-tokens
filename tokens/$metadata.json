@@ -3,6 +3,19 @@
     "core",
     "light",
     "dark",
-    "theme"
+    "theme",
+    "Studio Cartelli/Light",
+    "Studio Cartelli/Light High Contrast",
+    "Studio Cartelli/Light Medium Contrast",
+    "Studio Cartelli/Dark",
+    "Studio Cartelli/Dark High Contrast",
+    "Studio Cartelli/Dark Medium Contrast",
+    "STC/Light",
+    "STC/Light High Contrast",
+    "STC/Light Medium Contrast",
+    "STC/Dark",
+    "STC/Dark High Contrast",
+    "STC/Dark Medium Contrast",
+    "typography/Mode 1"
   ]
 }
