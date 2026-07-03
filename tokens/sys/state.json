@@ -613,6 +613,23 @@
             "type": "color",
             "description": "press/drag state layer over shadow"
           }
+        },
+        "surface-tint": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-tint}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-tint"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-tint}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-tint"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-tint}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-tint"
+          }
         }
       }
     }

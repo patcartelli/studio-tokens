@@ -42,8 +42,10 @@ const light = new StyleDictionary({
   source: [
     'tokens/ref/palette.json',
     'tokens/ref/typeface.json',
+    'tokens/ref/key.json',
     'tokens/sys/color.light.json',
     'tokens/sys/state.json',
+    'tokens/sys/surfaces.json',
     'tokens/sys/typescale.json',
     'tokens/sc/extended.json',
   ].map((p) => join(root, p)),
@@ -59,7 +61,8 @@ const light = new StyleDictionary({
           options: {
             // State-layer rgba() composes an alpha onto a referenced color — var()
             // can't be unpacked inside rgba(), so those must inline their values.
-            outputReferences: (token) => !token.filePath.includes('sys/state'),
+            outputReferences: (token) =>
+              !token.filePath.includes('sys/state') && !token.filePath.includes('sys/surfaces'),
             selector: ':root',
           },
         },
@@ -73,8 +76,9 @@ const dark = new StyleDictionary({
   include: [join(root, 'tokens/ref/palette.json')],
   source: [
     join(root, 'tokens/sys/color.dark.json'),
-    // State layers re-emit in the dark block so their rgba() resolves against dark roles.
+    // State layers + tint overlays re-emit in the dark block so their rgba() resolves against dark roles.
     join(root, 'tokens/sys/state.json'),
+    join(root, 'tokens/sys/surfaces.json'),
     join(root, 'tokens/sc/extended.dark.json'),
   ],
   platforms: {

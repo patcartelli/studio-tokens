@@ -126,11 +126,16 @@
   --md-ref-palette-neutral-variant-98: #f2fbfd;
   --md-ref-palette-neutral-variant-99: #f6feff;
   --md-ref-palette-neutral-variant-100: #ffffff;
+  --md-ref-palette-white: #ffffff;
+  --md-ref-palette-black: #000000;
   --md-ref-typeface-brand: 'Polymath Display', Georgia, serif; /** Display/headline typeface */
   --md-ref-typeface-plain: 'Polymath Text', Inter, system-ui, -apple-system, sans-serif; /** Body/title/label typeface */
   --md-ref-typeface-mono: 'DM Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace; /** Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain) */
   --md-ref-typeface-weight-regular: 400;
   --md-ref-typeface-weight-medium: 500;
+  --md-ref-key-color-primary: #181818; /** Graphite seed — generates the primary ramp */
+  --md-ref-key-color-tertiary: #f5c542; /** Brand yellow seed — generates the tertiary ramp */
+  --md-ref-source-seed: #181818; /** Original Material Theme Builder source color (neutrals/secondary derive from its Figma export) */
   --md-sys-typescale-display-large-size: clamp(var(--md-sys-typescale-display-large-size-compact), 5.5vw, 57px);
   --md-sys-typescale-display-large-line-height: 1.12;
   --md-sys-typescale-display-large-tracking: -0.25px;
@@ -275,6 +280,7 @@
   --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
   --color-number-emphasis: var(--md-ref-palette-tertiary-60); /** Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold) */
   --color-number-marker: var(--md-ref-palette-tertiary-80); /** Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text */
+  --md-sys-color-surface-tint: var(--md-sys-color-primary);
   --md-sys-state-primary-opacity-08: rgba(49, 48, 48, 0.08); /** hover state layer over primary */
   --md-sys-state-primary-opacity-10: rgba(49, 48, 48, 0.10); /** focus state layer over primary */
   --md-sys-state-primary-opacity-16: rgba(49, 48, 48, 0.16); /** press/drag state layer over primary */
@@ -383,6 +389,14 @@
   --md-sys-state-shadow-opacity-08: rgba(0, 0, 0, 0.08); /** hover state layer over shadow */
   --md-sys-state-shadow-opacity-10: rgba(0, 0, 0, 0.10); /** focus state layer over shadow */
   --md-sys-state-shadow-opacity-16: rgba(0, 0, 0, 0.16); /** press/drag state layer over shadow */
+  --md-sys-state-surface-tint-opacity-08: rgba(49, 48, 48, 0.08); /** hover state layer over surface-tint */
+  --md-sys-state-surface-tint-opacity-10: rgba(49, 48, 48, 0.10); /** focus state layer over surface-tint */
+  --md-sys-state-surface-tint-opacity-16: rgba(49, 48, 48, 0.16); /** press/drag state layer over surface-tint */
+  --md-sys-surface-tint-opacity-05: rgba(49, 48, 48, 0.05); /** Surface tint at elevation level 1 */
+  --md-sys-surface-tint-opacity-08: rgba(49, 48, 48, 0.08); /** Surface tint at elevation level 2 */
+  --md-sys-surface-tint-opacity-11: rgba(49, 48, 48, 0.11); /** Surface tint at elevation level 3 */
+  --md-sys-surface-tint-opacity-12: rgba(49, 48, 48, 0.12); /** Surface tint at elevation level 4 */
+  --md-sys-surface-tint-opacity-14: rgba(49, 48, 48, 0.14); /** Surface tint at elevation level 5 */
 }
 
 /**
@@ -426,6 +440,7 @@
   --md-sys-color-on-background: #e1e3e3;
   --md-sys-color-scrim: #000000;
   --md-sys-color-shadow: #000000;
+  --md-sys-color-surface-tint: #c8c6c5;
   --md-sys-state-primary-opacity-08: rgba(200, 198, 197, 0.08); /** hover state layer over primary */
   --md-sys-state-primary-opacity-10: rgba(200, 198, 197, 0.10); /** focus state layer over primary */
   --md-sys-state-primary-opacity-16: rgba(200, 198, 197, 0.16); /** press/drag state layer over primary */
@@ -534,6 +549,14 @@
   --md-sys-state-shadow-opacity-08: rgba(0, 0, 0, 0.08); /** hover state layer over shadow */
   --md-sys-state-shadow-opacity-10: rgba(0, 0, 0, 0.10); /** focus state layer over shadow */
   --md-sys-state-shadow-opacity-16: rgba(0, 0, 0, 0.16); /** press/drag state layer over shadow */
+  --md-sys-state-surface-tint-opacity-08: rgba(200, 198, 197, 0.08); /** hover state layer over surface-tint */
+  --md-sys-state-surface-tint-opacity-10: rgba(200, 198, 197, 0.10); /** focus state layer over surface-tint */
+  --md-sys-state-surface-tint-opacity-16: rgba(200, 198, 197, 0.16); /** press/drag state layer over surface-tint */
+  --md-sys-surface-tint-opacity-05: rgba(200, 198, 197, 0.05); /** Surface tint at elevation level 1 */
+  --md-sys-surface-tint-opacity-08: rgba(200, 198, 197, 0.08); /** Surface tint at elevation level 2 */
+  --md-sys-surface-tint-opacity-11: rgba(200, 198, 197, 0.11); /** Surface tint at elevation level 3 */
+  --md-sys-surface-tint-opacity-12: rgba(200, 198, 197, 0.12); /** Surface tint at elevation level 4 */
+  --md-sys-surface-tint-opacity-14: rgba(200, 198, 197, 0.14); /** Surface tint at elevation level 5 */
   --color-number-emphasis: #f0c03e; /** Full bright yellow works as text on dark surfaces */
   --color-number-marker: #594400; /** Deep gold marker for dark scheme — pair with on-surface text */
   --shadow-card: 0px 8px 32px 0px rgba(0,0,0,0.4); /** Stronger card shadow for dark theme */

@@ -3,12 +3,14 @@
     "id": "light",
     "name": "light",
     "selectedTokenSets": {
-      "ref/palette": "source",
-      "ref/typeface": "source",
+      "ref/palette": "enabled",
+      "ref/typeface": "enabled",
       "sys/color.light": "enabled",
       "sys/typescale": "enabled",
       "sc/extended": "enabled",
-      "sys/state": "enabled"
+      "sys/state": "enabled",
+      "ref/key": "enabled",
+      "sys/surfaces": "enabled"
     },
     "group": "scheme"
   },
@@ -16,13 +18,15 @@
     "id": "dark",
     "name": "dark",
     "selectedTokenSets": {
-      "ref/palette": "source",
-      "ref/typeface": "source",
+      "ref/palette": "enabled",
+      "ref/typeface": "enabled",
       "sys/color.dark": "enabled",
       "sys/typescale": "enabled",
       "sc/extended": "enabled",
       "sc/extended.dark": "enabled",
-      "sys/state": "enabled"
+      "sys/state": "enabled",
+      "ref/key": "enabled",
+      "sys/surfaces": "enabled"
     },
     "group": "scheme"
   }

@@ -2,9 +2,11 @@
   "tokenSetOrder": [
     "ref/palette",
     "ref/typeface",
+    "ref/key",
     "sys/color.light",
     "sys/color.dark",
     "sys/state",
+    "sys/surfaces",
     "sys/typescale",
     "sc/extended",
     "sc/extended.dark"

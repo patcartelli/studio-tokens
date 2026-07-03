@@ -1,0 +1,17 @@
+{
+  "md": {
+    "ref": {
+      "palette": {
+        "white": { "value": "#ffffff", "type": "color" },
+        "black": { "value": "#000000", "type": "color" }
+      },
+      "key-color": {
+        "primary": { "value": "#181818", "type": "color", "description": "Graphite seed — generates the primary ramp" },
+        "tertiary": { "value": "#f5c542", "type": "color", "description": "Brand yellow seed — generates the tertiary ramp" }
+      },
+      "source": {
+        "seed": { "value": "#181818", "type": "color", "description": "Original Material Theme Builder source color (neutrals/secondary derive from its Figma export)" }
+      }
+    }
+  }
+}
