@@ -15,8 +15,9 @@
   "scripts": {
     "build": "node build/build.mjs",
     "check:contrast": "node scripts/check-contrast.mjs",
+    "check:json": "node scripts/validate-json.mjs",
     "generate:palettes": "node scripts/generate-palettes.mjs",
-    "verify": "npm run build && npm run check:contrast && git diff --exit-code -- dist"
+    "verify": "npm run check:json && npm run build && npm run check:contrast && git diff --exit-code -- dist"
   },
   "repository": "github:patcartelli/studio-tokens",
   "license": "MIT",

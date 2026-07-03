@@ -9,7 +9,7 @@
       "value": "{md.ref.palette.tertiary.30}",
       "type": "color",
       "description": "Deep gold marker for dark scheme \u2014 pair with on-surface text"
-    },
+    }
   },
   "shadow": {
     "card": {
