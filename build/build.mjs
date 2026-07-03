@@ -17,14 +17,18 @@ const tmp = join(root, 'dist', 'tmp');
 
 register(StyleDictionary);
 
-// M3's published CSS variable names use -size/-weight/-tracking/-font,
-// not the raw composite property names (-font-size etc.). Align with the spec.
+// tokens/sys/typescale.json is rooted at "typescale" (not "md.sys.typescale") so
+// Tokens Studio/Figma groups it as typescale/display/large instead of the flatter,
+// noisier md/sys/typescale/display-large. This transform re-inserts the "md-sys-"
+// prefix into the CSS variable name and aligns property suffixes with M3's published
+// names (-size/-weight/-tracking/-font instead of the raw -font-size etc.), so the
+// built CSS is identical either way — only the Figma-facing token path changed.
 StyleDictionary.registerTransform({
   name: 'name/m3-typescale-props',
   type: 'name',
   transform: (token) => {
-    if (!token.name.startsWith('md-sys-typescale-')) return token.name;
-    return token.name
+    if (!token.name.startsWith('typescale-')) return token.name;
+    return ('md-sys-' + token.name)
       .replace(/-font-size$/, '-size')
       .replace(/-font-weight$/, '-weight')
       .replace(/-letter-spacing$/, '-tracking')
