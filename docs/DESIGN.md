@@ -24,7 +24,7 @@ Approved design for the Studio Cartelli token system. Decisions made collaborati
 | `--color-on-surface-muted` | `outline` |
 | `--color-border` | `outline-variant` |
 | `--color-surface-subtle` | `surface-container` |
-| `--color-accent` / `--color-accent-text` | `primary` / `on-primary-container` (yellow = primary key color) |
+| `--color-accent` / `--color-accent-text` | `tertiary.80` (fixed bright yellow) / `tertiary` — scheme settled 2026-07-03 as graphite primary (light tone-20 deviation) + yellow tertiary; stat emphasis via `--color-number-emphasis`/`--color-number-marker` |
 | `--color-error` | `error` |
 | `--color-surface-footer` / `--color-on-surface-footer` | `inverse-surface` / `inverse-on-surface` |
 | `--color-footer-link` | `inverse-primary` |

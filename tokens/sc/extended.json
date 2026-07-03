@@ -28,6 +28,8 @@
     "body-relaxed": { "value": "165%", "type": "lineHeights", "description": "Studio Cartelli extension — relaxed prose line-height" }
   },
   "color": {
+    "number-emphasis": { "value": "{md.ref.palette.tertiary.60}", "type": "color", "description": "Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold)" },
+    "number-marker": { "value": "{md.ref.palette.tertiary.80}", "type": "color", "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text" },
     "on-surface-footer-muted": { "value": "#555555", "type": "color", "description": "Muted text on dark footer (large name treatment) — no M3 role" },
     "on-surface-footer-copyright": { "value": "#8a8a8a", "type": "color", "description": "Copyright text — meets 4.5:1 on inverse-surface" },
     "border-footer": { "value": "#333333", "type": "color", "description": "Subtle border on dark footer — no M3 role" }
