@@ -8,7 +8,8 @@
       "sys/color.light": "enabled",
       "sys/typescale": "enabled",
       "sc/extended": "enabled"
-    }
+    },
+    "group": "scheme"
   },
   {
     "id": "dark",
@@ -20,6 +21,7 @@
       "sys/typescale": "enabled",
       "sc/extended": "enabled",
       "sc/extended.dark": "enabled"
-    }
+    },
+    "group": "scheme"
   }
 ]
