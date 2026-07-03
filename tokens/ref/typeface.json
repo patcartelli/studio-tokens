@@ -18,12 +18,18 @@
           "description": "Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain)"
         },
         "weight-regular": {
-          "value": "400",
-          "type": "fontWeights"
+          "value": "500",
+          "type": "fontWeights",
+          "description": "Polymath's \"Regular\" cut is weight 500 — there is no true 400 in use"
         },
         "weight-medium": {
           "value": "500",
           "type": "fontWeights"
+        },
+        "weight-bold": {
+          "value": "700",
+          "type": "fontWeights",
+          "description": "Available for emphasis/buttons — M3 typescale roles do not use bold directly"
         }
       }
     }

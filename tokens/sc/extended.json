@@ -90,20 +90,35 @@
       "type": "color",
       "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text"
     },
-    "on-surface-footer-muted": {
-      "value": "#555555",
+    "surface-footer": {
+      "value": "{md.ref.palette.neutral.20}",
       "type": "color",
-      "description": "Muted text on dark footer (large name treatment) — no M3 role"
+      "description": "Footer background — intentionally fixed dark, does not flip with site theme"
+    },
+    "on-surface-footer": {
+      "value": "{md.ref.palette.neutral.95}",
+      "type": "color",
+      "description": "Footer text — fixed light, pairs with the fixed-dark footer surface"
+    },
+    "footer-link": {
+      "value": "{md.ref.palette.tertiary.80}",
+      "type": "color",
+      "description": "Footer link color — fixed bright yellow (tertiary key color), does not flip"
+    },
+    "on-surface-footer-muted": {
+      "value": "{md.ref.palette.neutral.40}",
+      "type": "color",
+      "description": "Muted decorative text on footer (large name treatment) — ~2:1 by design"
     },
     "on-surface-footer-copyright": {
-      "value": "#8a8a8a",
+      "value": "{md.ref.palette.neutral.70}",
       "type": "color",
-      "description": "Copyright text — meets 4.5:1 on inverse-surface"
+      "description": "Copyright text — >=4.5:1 on inverse-surface in light scheme"
     },
     "border-footer": {
-      "value": "#333333",
+      "value": "{md.ref.palette.neutral.30}",
       "type": "color",
-      "description": "Subtle border on dark footer — no M3 role"
+      "description": "Subtle border on footer — ~1.4:1 hairline by design"
     }
   },
   "shadow": {
