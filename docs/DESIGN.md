@@ -49,6 +49,6 @@ Spacing, container, measure, grid, callout keep legacy names in output — M3 de
 
 ## Known caveats
 
-- The site's current hand-tuned hexes will shift when real Figma palettes land — that's expected; review the visual diff before bumping the pin.
+- The site's current hand-tuned hexes will shift now that real palettes are in (2026-07-03: Figma MTB export + primary reseeded from `#f5c542`; secondary/tertiary remain teal-derived until a full re-seed in Figma) — review the visual diff before bumping the pin.
 - Tokens Studio Themes tab is Pro; free tier toggles token sets manually. `$themes.json` in-repo drives builds regardless.
 - Fixed-variant roles (`primary-fixed`, etc.) are omitted until needed.

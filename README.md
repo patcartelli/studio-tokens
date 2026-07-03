@@ -20,7 +20,7 @@ dist/css/compat.css      Legacy-name shim (--color-surface → --md-sys-color-su
 
 `dist/` is committed; CI fails if it drifts from a fresh build.
 
-> **Palette values are placeholders** (generated from the M3 baseline seed `#6750A4`) until the real palettes are imported from Figma via Tokens Studio. Regenerate locally with `npm run generate:palettes -- '#RRGGBB'`.
+> **Palette provenance:** neutral, neutral-variant, secondary, tertiary, and error ramps come from the Figma Material Theme Builder export (see the `figma-import` branch); missing neutral surface-container tones were backfilled from the export's resolved scheme values. The **primary palette is reseeded from the site's yellow `#f5c542`** via Material Color Utilities. `npm run generate:palettes -- '#RRGGBB'` regenerates all ramps from a single seed if ever needed.
 
 ## Commands
 
