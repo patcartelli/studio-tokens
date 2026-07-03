@@ -1,0 +1,620 @@
+{
+  "md": {
+    "sys": {
+      "state": {
+        "primary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.primary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over primary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.primary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over primary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.primary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over primary"
+          }
+        },
+        "on-primary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-primary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-primary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-primary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-primary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-primary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-primary"
+          }
+        },
+        "primary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.primary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over primary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.primary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over primary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.primary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over primary-container"
+          }
+        },
+        "on-primary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-primary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-primary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-primary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-primary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-primary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-primary-container"
+          }
+        },
+        "secondary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.secondary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over secondary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.secondary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over secondary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.secondary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over secondary"
+          }
+        },
+        "on-secondary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-secondary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-secondary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-secondary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-secondary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-secondary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-secondary"
+          }
+        },
+        "secondary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.secondary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over secondary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.secondary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over secondary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.secondary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over secondary-container"
+          }
+        },
+        "on-secondary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-secondary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-secondary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-secondary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-secondary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-secondary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-secondary-container"
+          }
+        },
+        "tertiary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.tertiary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over tertiary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.tertiary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over tertiary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.tertiary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over tertiary"
+          }
+        },
+        "on-tertiary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-tertiary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-tertiary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-tertiary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-tertiary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-tertiary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-tertiary"
+          }
+        },
+        "tertiary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.tertiary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over tertiary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.tertiary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over tertiary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.tertiary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over tertiary-container"
+          }
+        },
+        "on-tertiary-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-tertiary-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-tertiary-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-tertiary-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-tertiary-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-tertiary-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-tertiary-container"
+          }
+        },
+        "error": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.error}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over error"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.error}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over error"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.error}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over error"
+          }
+        },
+        "on-error": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-error}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-error"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-error}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-error"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-error}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-error"
+          }
+        },
+        "error-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.error-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over error-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.error-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over error-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.error-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over error-container"
+          }
+        },
+        "on-error-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-error-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-error-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-error-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-error-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-error-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-error-container"
+          }
+        },
+        "surface": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface"
+          }
+        },
+        "on-surface": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-surface}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-surface"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-surface}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-surface"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-surface}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-surface"
+          }
+        },
+        "surface-variant": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-variant}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-variant"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-variant}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-variant"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-variant}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-variant"
+          }
+        },
+        "on-surface-variant": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-surface-variant}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-surface-variant"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-surface-variant}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-surface-variant"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-surface-variant}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-surface-variant"
+          }
+        },
+        "surface-dim": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-dim}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-dim"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-dim}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-dim"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-dim}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-dim"
+          }
+        },
+        "surface-bright": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-bright}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-bright"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-bright}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-bright"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-bright}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-bright"
+          }
+        },
+        "surface-container-lowest": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-container-lowest}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-container-lowest"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-container-lowest}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-container-lowest"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-container-lowest}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-container-lowest"
+          }
+        },
+        "surface-container-low": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-container-low}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-container-low"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-container-low}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-container-low"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-container-low}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-container-low"
+          }
+        },
+        "surface-container": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-container}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-container"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-container}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-container"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-container}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-container"
+          }
+        },
+        "surface-container-high": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-container-high}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-container-high"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-container-high}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-container-high"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-container-high}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-container-high"
+          }
+        },
+        "surface-container-highest": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.surface-container-highest}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over surface-container-highest"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.surface-container-highest}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over surface-container-highest"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.surface-container-highest}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over surface-container-highest"
+          }
+        },
+        "outline": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.outline}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over outline"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.outline}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over outline"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.outline}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over outline"
+          }
+        },
+        "outline-variant": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.outline-variant}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over outline-variant"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.outline-variant}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over outline-variant"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.outline-variant}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over outline-variant"
+          }
+        },
+        "inverse-surface": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.inverse-surface}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over inverse-surface"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.inverse-surface}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over inverse-surface"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.inverse-surface}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over inverse-surface"
+          }
+        },
+        "inverse-on-surface": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.inverse-on-surface}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over inverse-on-surface"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.inverse-on-surface}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over inverse-on-surface"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.inverse-on-surface}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over inverse-on-surface"
+          }
+        },
+        "inverse-primary": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.inverse-primary}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over inverse-primary"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.inverse-primary}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over inverse-primary"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.inverse-primary}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over inverse-primary"
+          }
+        },
+        "background": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.background}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over background"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.background}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over background"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.background}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over background"
+          }
+        },
+        "on-background": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.on-background}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over on-background"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.on-background}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over on-background"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.on-background}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over on-background"
+          }
+        },
+        "scrim": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.scrim}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over scrim"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.scrim}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over scrim"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.scrim}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over scrim"
+          }
+        },
+        "shadow": {
+          "opacity-08": {
+            "value": "rgba({md.sys.color.shadow}, 0.08)",
+            "type": "color",
+            "description": "hover state layer over shadow"
+          },
+          "opacity-10": {
+            "value": "rgba({md.sys.color.shadow}, 0.10)",
+            "type": "color",
+            "description": "focus state layer over shadow"
+          },
+          "opacity-16": {
+            "value": "rgba({md.sys.color.shadow}, 0.16)",
+            "type": "color",
+            "description": "press/drag state layer over shadow"
+          }
+        }
+      }
+    }
+  }
+}

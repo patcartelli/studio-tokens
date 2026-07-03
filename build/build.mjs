@@ -43,6 +43,7 @@ const light = new StyleDictionary({
     'tokens/ref/palette.json',
     'tokens/ref/typeface.json',
     'tokens/sys/color.light.json',
+    'tokens/sys/state.json',
     'tokens/sys/typescale.json',
     'tokens/sc/extended.json',
   ].map((p) => join(root, p)),
@@ -55,7 +56,12 @@ const light = new StyleDictionary({
         {
           destination: 'light.css',
           format: 'css/variables',
-          options: { outputReferences: true, selector: ':root' },
+          options: {
+            // State-layer rgba() composes an alpha onto a referenced color — var()
+            // can't be unpacked inside rgba(), so those must inline their values.
+            outputReferences: (token) => !token.filePath.includes('sys/state'),
+            selector: ':root',
+          },
         },
       ],
     },
@@ -65,7 +71,12 @@ const light = new StyleDictionary({
 const dark = new StyleDictionary({
   ...common,
   include: [join(root, 'tokens/ref/palette.json')],
-  source: [join(root, 'tokens/sys/color.dark.json'), join(root, 'tokens/sc/extended.dark.json')],
+  source: [
+    join(root, 'tokens/sys/color.dark.json'),
+    // State layers re-emit in the dark block so their rgba() resolves against dark roles.
+    join(root, 'tokens/sys/state.json'),
+    join(root, 'tokens/sc/extended.dark.json'),
+  ],
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
