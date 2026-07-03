@@ -76,49 +76,34 @@
     "body-relaxed": {
       "value": "165%",
       "type": "lineHeights",
-      "description": "Studio Cartelli extension \u2014 relaxed prose line-height"
+      "description": "Studio Cartelli extension — relaxed prose line-height"
     }
   },
   "color": {
     "number-emphasis": {
       "value": "{md.ref.palette.tertiary.60}",
       "type": "color",
-      "description": "Gold for emphasized stat numbers \u2014 passes AA only at large-text sizes (>=24px or 19px bold)"
+      "description": "Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold)"
     },
     "number-marker": {
       "value": "{md.ref.palette.tertiary.80}",
       "type": "color",
-      "description": "Bright yellow highlighter background behind ink numbers \u2014 decorative, pair with on-surface text"
-    },
-    "surface-footer": {
-      "value": "{md.ref.palette.neutral.20}",
-      "type": "color",
-      "description": "Footer background \u2014 intentionally fixed dark, does not flip with site theme"
-    },
-    "on-surface-footer": {
-      "value": "{md.ref.palette.neutral.95}",
-      "type": "color",
-      "description": "Footer text \u2014 fixed light, pairs with the fixed-dark footer surface"
-    },
-    "footer-link": {
-      "value": "{md.ref.palette.tertiary.80}",
-      "type": "color",
-      "description": "Footer link color \u2014 fixed bright yellow (tertiary key color), does not flip"
+      "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text"
     },
     "on-surface-footer-muted": {
-      "value": "{md.ref.palette.neutral.40}",
+      "value": "#555555",
       "type": "color",
-      "description": "Muted decorative text on footer (large name treatment) \u2014 ~2:1 by design"
+      "description": "Muted text on dark footer (large name treatment) — no M3 role"
     },
     "on-surface-footer-copyright": {
-      "value": "{md.ref.palette.neutral.70}",
+      "value": "#8a8a8a",
       "type": "color",
-      "description": "Copyright text \u2014 >=4.5:1 on inverse-surface in light scheme"
+      "description": "Copyright text — meets 4.5:1 on inverse-surface"
     },
     "border-footer": {
-      "value": "{md.ref.palette.neutral.30}",
+      "value": "#333333",
       "type": "color",
-      "description": "Subtle border on footer \u2014 ~1.4:1 hairline by design"
+      "description": "Subtle border on dark footer — no M3 role"
     }
   },
   "shadow": {

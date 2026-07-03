@@ -15,21 +15,15 @@
         "mono": {
           "value": "DM Mono, ui-monospace, Cascadia Code, Fira Code, monospace",
           "type": "fontFamilies",
-          "description": "Monospace typeface (Studio Cartelli extension \u2014 M3 defines only brand/plain)"
+          "description": "Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain)"
         },
         "weight-regular": {
-          "value": "500",
-          "type": "fontWeights",
-          "description": "Polymath's \"Regular\" cut is weight 500 \u2014 there is no true 400 in use"
+          "value": "400",
+          "type": "fontWeights"
         },
         "weight-medium": {
           "value": "500",
           "type": "fontWeights"
-        },
-        "weight-bold": {
-          "value": "700",
-          "type": "fontWeights",
-          "description": "Available for emphasis/buttons \u2014 M3 typescale roles do not use bold directly"
         }
       }
     }
