@@ -1,12 +1,12 @@
 {
   "color": {
     "number-emphasis": {
-      "value": "{md.ref.palette.tertiary.80}",
+      "value": "{ref.tertiary.80}",
       "type": "color",
       "description": "Full bright yellow works as text on dark surfaces"
     },
     "number-marker": {
-      "value": "{md.ref.palette.tertiary.30}",
+      "value": "{ref.tertiary.30}",
       "type": "color",
       "description": "Deep gold marker for dark scheme \u2014 pair with on-surface text"
     }

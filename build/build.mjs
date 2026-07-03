@@ -17,22 +17,48 @@ const tmp = join(root, 'dist', 'tmp');
 
 register(StyleDictionary);
 
-// tokens/sys/typescale.json is rooted at "typescale" (not "md.sys.typescale") so
-// Tokens Studio/Figma groups it as typescale/display/large instead of the flatter,
-// noisier md/sys/typescale/display-large. This transform re-inserts the "md-sys-"
-// prefix into the CSS variable name and aligns property suffixes with M3's published
-// names (-size/-weight/-tracking/-font instead of the raw -font-size etc.), so the
-// built CSS is identical either way — only the Figma-facing token path changed.
+// Token source files are rooted at flat, MTB-style groups (typescale, sys, ref,
+// white/black, key-colors, source, surfaces, state-layers) instead of the deeper
+// md.sys.*/md.ref.* nesting — so Tokens Studio/Figma groups them as shallow
+// siblings (matching how Material Theme Builder itself organizes a kit) rather
+// than three levels deep under a repeated "md" root. This transform reconstructs
+// the spec-correct "--md-sys-*"/"--md-ref-*" CSS variable name from each token's
+// original path (token.path, set before any name transform runs), so the built
+// CSS is byte-identical either way — only the Figma-facing token path changed.
 StyleDictionary.registerTransform({
-  name: 'name/m3-typescale-props',
+  name: 'name/m3-remap',
   type: 'name',
   transform: (token) => {
-    if (!token.name.startsWith('typescale-')) return token.name;
-    return ('md-sys-' + token.name)
-      .replace(/-font-size$/, '-size')
-      .replace(/-font-weight$/, '-weight')
-      .replace(/-letter-spacing$/, '-tracking')
-      .replace(/-font-family$/, '-font');
+    const p = token.path;
+    // Path segments can carry internal camelCase (typography expansion emits
+    // "fontSize", not "font-size") — split that before joining with hyphens.
+    const toKebab = (s) => s.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+    const j = (arr) => arr.map(toKebab).join('-');
+    switch (p[0]) {
+      case 'typescale':
+        return j(['md', 'sys', ...p])
+          .replace(/-font-size$/, '-size')
+          .replace(/-font-weight$/, '-weight')
+          .replace(/-letter-spacing$/, '-tracking')
+          .replace(/-font-family$/, '-font');
+      case 'sys':
+        return j(['md', 'sys', 'color', ...p.slice(1)]);
+      case 'ref':
+        return j(['md', 'ref', 'palette', ...p.slice(1)]);
+      case 'white':
+      case 'black':
+        return j(['md', 'ref', 'palette', ...p]);
+      case 'key-colors':
+        return j(['md', 'ref', 'key-color', ...p.slice(1)]);
+      case 'source':
+        return j(['md', 'ref', ...p]);
+      case 'surfaces':
+        return j(['md', 'sys', 'surface', ...p.slice(1)]);
+      case 'state-layers':
+        return j(['md', 'sys', 'state', ...p.slice(1)]);
+      default:
+        return token.name; // already kebab-cased by name/kebab (typeface, sc/extended)
+    }
   },
 });
 
@@ -56,7 +82,7 @@ const light = new StyleDictionary({
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
-      transforms: ['name/kebab', 'name/m3-typescale-props'],
+      transforms: ['name/kebab', 'name/m3-remap'],
       buildPath: tmp + '/',
       files: [
         {
@@ -88,7 +114,7 @@ const dark = new StyleDictionary({
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
-      transforms: ['name/kebab', 'name/m3-typescale-props'],
+      transforms: ['name/kebab', 'name/m3-remap'],
       buildPath: tmp + '/',
       files: [
         {
@@ -109,8 +135,11 @@ await dark.buildAllPlatforms();
 let lightCss = readFileSync(join(tmp, 'light.css'), 'utf8');
 const darkCss = readFileSync(join(tmp, 'dark.css'), 'utf8');
 
-// Compose responsive clamp() for the three display sizes.
-for (const role of ['display-large', 'display-medium', 'display-small']) {
+// Compose responsive clamp() for the six display sizes (regular + emphasized).
+for (const role of [
+  'display-large', 'display-medium', 'display-small',
+  'display-large-emphasized', 'display-medium-emphasized', 'display-small-emphasized',
+]) {
   const base = `--md-sys-typescale-${role}-size`;
   const spec = new RegExp(`${base}: ([^;]+);`).exec(lightCss)?.[1].trim();
   const fluid = new RegExp(`${base}-fluid: ([^;]+);`).exec(lightCss)?.[1].trim();

@@ -13,6 +13,19 @@
       },
       "large-size-compact": { "value": "40px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
       "large-size-fluid": { "value": "5.5vw", "type": "other", "description": "clamp() preferred value" },
+      "large-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "57px",
+          "lineHeight": "112%",
+          "letterSpacing": "-0.25px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
+      "large-emphasized-size-compact": { "value": "40px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
+      "large-emphasized-size-fluid": { "value": "5.5vw", "type": "other", "description": "clamp() preferred value" },
       "medium": {
         "type": "typography",
         "value": {
@@ -25,6 +38,19 @@
       },
       "medium-size-compact": { "value": "30px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
       "medium-size-fluid": { "value": "4vw", "type": "other", "description": "clamp() preferred value" },
+      "medium-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "45px",
+          "lineHeight": "116%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
+      "medium-emphasized-size-compact": { "value": "30px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
+      "medium-emphasized-size-fluid": { "value": "4vw", "type": "other", "description": "clamp() preferred value" },
       "small": {
         "type": "typography",
         "value": {
@@ -36,7 +62,20 @@
         }
       },
       "small-size-compact": { "value": "24px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
-      "small-size-fluid": { "value": "3.5vw", "type": "other", "description": "clamp() preferred value" }
+      "small-size-fluid": { "value": "3.5vw", "type": "other", "description": "clamp() preferred value" },
+      "small-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "36px",
+          "lineHeight": "122%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
+      "small-emphasized-size-compact": { "value": "24px", "type": "fontSizes", "description": "clamp() lower bound for responsive display sizing" },
+      "small-emphasized-size-fluid": { "value": "3.5vw", "type": "other", "description": "clamp() preferred value" }
     },
     "headline": {
       "large": {
@@ -49,6 +88,17 @@
           "letterSpacing": "0px"
         }
       },
+      "large-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "32px",
+          "lineHeight": "125%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "medium": {
         "type": "typography",
         "value": {
@@ -59,6 +109,17 @@
           "letterSpacing": "0px"
         }
       },
+      "medium-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "28px",
+          "lineHeight": "129%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "small": {
         "type": "typography",
         "value": {
@@ -68,6 +129,17 @@
           "lineHeight": "133%",
           "letterSpacing": "0px"
         }
+      },
+      "small-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.brand}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "24px",
+          "lineHeight": "133%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
       }
     },
     "title": {
@@ -81,6 +153,17 @@
           "letterSpacing": "0px"
         }
       },
+      "large-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "22px",
+          "lineHeight": "127%",
+          "letterSpacing": "0px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "medium": {
         "type": "typography",
         "value": {
@@ -91,6 +174,17 @@
           "letterSpacing": "0.15px"
         }
       },
+      "medium-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "16px",
+          "lineHeight": "150%",
+          "letterSpacing": "0.15px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "small": {
         "type": "typography",
         "value": {
@@ -100,6 +194,17 @@
           "lineHeight": "143%",
           "letterSpacing": "0.1px"
         }
+      },
+      "small-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "14px",
+          "lineHeight": "143%",
+          "letterSpacing": "0.1px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
       }
     },
     "body": {
@@ -113,6 +218,17 @@
           "letterSpacing": "0.5px"
         }
       },
+      "large-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "16px",
+          "lineHeight": "150%",
+          "letterSpacing": "0.5px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "medium": {
         "type": "typography",
         "value": {
@@ -123,6 +239,17 @@
           "letterSpacing": "0.25px"
         }
       },
+      "medium-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "14px",
+          "lineHeight": "143%",
+          "letterSpacing": "0.25px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "small": {
         "type": "typography",
         "value": {
@@ -132,6 +259,17 @@
           "lineHeight": "133%",
           "letterSpacing": "0.4px"
         }
+      },
+      "small-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "12px",
+          "lineHeight": "133%",
+          "letterSpacing": "0.4px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
       }
     },
     "label": {
@@ -145,6 +283,17 @@
           "letterSpacing": "0.1px"
         }
       },
+      "large-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "14px",
+          "lineHeight": "143%",
+          "letterSpacing": "0.1px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "medium": {
         "type": "typography",
         "value": {
@@ -155,6 +304,17 @@
           "letterSpacing": "0.5px"
         }
       },
+      "medium-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "12px",
+          "lineHeight": "133%",
+          "letterSpacing": "0.5px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
+      },
       "small": {
         "type": "typography",
         "value": {
@@ -164,6 +324,17 @@
           "lineHeight": "145%",
           "letterSpacing": "0.5px"
         }
+      },
+      "small-emphasized": {
+        "type": "typography",
+        "value": {
+          "fontFamily": "{md.ref.typeface.plain}",
+          "fontWeight": "{md.ref.typeface.weight-bold}",
+          "fontSize": "11px",
+          "lineHeight": "145%",
+          "letterSpacing": "0.5px"
+        },
+        "description": "M3 Expressive emphasized variant — same metrics, bold weight"
       }
     }
   }

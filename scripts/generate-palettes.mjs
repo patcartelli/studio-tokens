@@ -27,11 +27,11 @@ const palettes = {
   error: { palette: theme.palettes.error, tones: STANDARD_TONES },
 };
 
-const out = { md: { ref: { palette: {} } } };
+const out = { ref: {} };
 for (const [name, { palette, tones }] of Object.entries(palettes)) {
-  out.md.ref.palette[name] = {};
+  out.ref[name] = {};
   for (const tone of tones) {
-    out.md.ref.palette[name][tone] = {
+    out.ref[name][tone] = {
       value: hexFromArgb(palette.tone(tone)),
       type: 'color',
     };

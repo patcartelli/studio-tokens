@@ -58,7 +58,14 @@ Replaces the `:root` token block (and the `--container-padding`/`--grid-gap` med
 - Typescale variables follow M3's published CSS names: `--md-sys-typescale-body-large-size`, `-weight`, `-tracking`, `-font`, `-line-height`.
 - Display sizes compile to `clamp(compact, fluid, spec)` — Figma shows the spec size (57/45/36), CSS stays responsive.
 - Line heights are emitted as unitless ratios (M3 px values ÷ font size), matching how the site applies them.
+- Each type role has an **`-emphasized` sibling** (M3 Expressive) — same size/line-height/tracking, bold weight (`weight-bold`, 700) instead of regular/medium.
 - `sc/extended` tokens keep their legacy names in output (`--space-md`, `--container-max`, `--shadow-card`, …) since M3 has no vocabulary for them.
+
+### Figma-facing structure vs. CSS output
+
+Token source files are rooted at flat, Material Theme Builder-style groups — `typescale`, `sys`, `ref`, `white`/`black`, `key-colors`, `source`, `surfaces`, `state-layers` — instead of nesting three levels under a repeated `md.sys.*`/`md.ref.*`. This is what Tokens Studio/Figma groups by, so styles and variables show up as shallow siblings (`typescale / display / large`, `ref / primary / 40`, `state-layers / primary / opacity-08`) rather than everything buried under `md / sys / ...`.
+
+The build's `name/m3-remap` transform (`build/build.mjs`) reconstructs the spec-correct `--md-sys-*`/`--md-ref-*` CSS variable name from each token's original path — so **the Figma-facing organization and the CSS output are decoupled**: reorganize the JSON for navigability without ever touching a published variable name. `compat.css` and the site are unaffected by this structure.
 - The footer palette (`--color-surface-footer`, `--color-on-surface-footer`, `--color-footer-link`, and its muted/copyright/border grays) is **fixed dark in both site themes by design** — it does not alias the M3 `inverse-surface` roles, which intentionally invert per scheme.
 - `--color-footer-link` and `--color-accent` both resolve to the fixed `tertiary.80` reference — the brand yellow key color, unaffected by theme.
 - Polymath's "Regular" cut is weight 500, not 400 — `md.ref.typeface.weight-regular` reflects that; `weight-bold` (700) is available for future use.

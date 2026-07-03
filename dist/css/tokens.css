@@ -126,73 +126,124 @@
   --md-ref-palette-neutral-variant-98: #f2fbfd;
   --md-ref-palette-neutral-variant-99: #f6feff;
   --md-ref-palette-neutral-variant-100: #ffffff;
-  --md-ref-palette-white: #ffffff;
-  --md-ref-palette-black: #000000;
   --md-ref-typeface-brand: 'Polymath Display', Georgia, serif; /** Display/headline typeface */
   --md-ref-typeface-plain: 'Polymath Text', Inter, system-ui, -apple-system, sans-serif; /** Body/title/label typeface */
   --md-ref-typeface-mono: 'DM Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace; /** Monospace typeface (Studio Cartelli extension — M3 defines only brand/plain) */
   --md-ref-typeface-weight-regular: 500; /** Polymath's "Regular" cut is weight 500 — there is no true 400 in use */
   --md-ref-typeface-weight-medium: 500;
   --md-ref-typeface-weight-bold: 700; /** Available for emphasis/buttons — M3 typescale roles do not use bold directly */
-  --md-ref-key-color-primary: #181818; /** Graphite seed — generates the primary ramp */
-  --md-ref-key-color-tertiary: #f5c542; /** Brand yellow seed — generates the tertiary ramp */
-  --md-ref-source-seed: #181818; /** Original Material Theme Builder source color (neutrals/secondary derive from its Figma export) */
   --md-sys-elevation-level1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
   --md-sys-elevation-level2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
   --md-sys-elevation-level3: 0px 1px 3px 0px rgba(0,0,0,0.30), 0px 4px 8px 3px rgba(0,0,0,0.15);
   --md-sys-elevation-level4: 0px 2px 3px 0px rgba(0,0,0,0.30), 0px 6px 10px 4px rgba(0,0,0,0.15);
   --md-sys-elevation-level5: 0px 4px 4px 0px rgba(0,0,0,0.30), 0px 8px 12px 6px rgba(0,0,0,0.15);
+  --md-ref-palette-white: #ffffff;
+  --md-ref-palette-black: #000000;
+  --md-ref-key-color-primary: #181818; /** Graphite seed — generates the primary ramp */
+  --md-ref-key-color-tertiary: #f5c542; /** Brand yellow seed — generates the tertiary ramp */
+  --md-ref-source-seed: #181818; /** Original Material Theme Builder source color (neutrals/secondary derive from its Figma export) */
   --md-sys-typescale-display-large-size: clamp(var(--md-sys-typescale-display-large-size-compact), 5.5vw, 57px);
   --md-sys-typescale-display-large-line-height: 1.12;
   --md-sys-typescale-display-large-tracking: -0.25px;
   --md-sys-typescale-display-large-size-compact: 40px; /** clamp() lower bound for responsive display sizing */
   --md-sys-typescale-display-large-size-fluid: 5.5vw; /** clamp() preferred value */
+  --md-sys-typescale-display-large-emphasized-size: clamp(var(--md-sys-typescale-display-large-emphasized-size-compact), 5.5vw, 57px); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-large-emphasized-line-height: 1.12; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-large-emphasized-tracking: -0.25px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-large-emphasized-size-compact: 40px; /** clamp() lower bound for responsive display sizing */
+  --md-sys-typescale-display-large-emphasized-size-fluid: 5.5vw; /** clamp() preferred value */
   --md-sys-typescale-display-medium-size: clamp(var(--md-sys-typescale-display-medium-size-compact), 4vw, 45px);
   --md-sys-typescale-display-medium-line-height: 1.16;
   --md-sys-typescale-display-medium-tracking: 0px;
   --md-sys-typescale-display-medium-size-compact: 30px; /** clamp() lower bound for responsive display sizing */
   --md-sys-typescale-display-medium-size-fluid: 4vw; /** clamp() preferred value */
+  --md-sys-typescale-display-medium-emphasized-size: clamp(var(--md-sys-typescale-display-medium-emphasized-size-compact), 4vw, 45px); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-medium-emphasized-line-height: 1.16; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-medium-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-medium-emphasized-size-compact: 30px; /** clamp() lower bound for responsive display sizing */
+  --md-sys-typescale-display-medium-emphasized-size-fluid: 4vw; /** clamp() preferred value */
   --md-sys-typescale-display-small-size: clamp(var(--md-sys-typescale-display-small-size-compact), 3.5vw, 36px);
   --md-sys-typescale-display-small-line-height: 1.22;
   --md-sys-typescale-display-small-tracking: 0px;
   --md-sys-typescale-display-small-size-compact: 24px; /** clamp() lower bound for responsive display sizing */
   --md-sys-typescale-display-small-size-fluid: 3.5vw; /** clamp() preferred value */
+  --md-sys-typescale-display-small-emphasized-size: clamp(var(--md-sys-typescale-display-small-emphasized-size-compact), 3.5vw, 36px); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-small-emphasized-line-height: 1.22; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-small-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-small-emphasized-size-compact: 24px; /** clamp() lower bound for responsive display sizing */
+  --md-sys-typescale-display-small-emphasized-size-fluid: 3.5vw; /** clamp() preferred value */
   --md-sys-typescale-headline-large-size: 32px;
   --md-sys-typescale-headline-large-line-height: 1.25;
   --md-sys-typescale-headline-large-tracking: 0px;
+  --md-sys-typescale-headline-large-emphasized-size: 32px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-large-emphasized-line-height: 1.25; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-large-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-headline-medium-size: 28px;
   --md-sys-typescale-headline-medium-line-height: 1.29;
   --md-sys-typescale-headline-medium-tracking: 0px;
+  --md-sys-typescale-headline-medium-emphasized-size: 28px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-medium-emphasized-line-height: 1.29; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-medium-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-headline-small-size: 24px;
   --md-sys-typescale-headline-small-line-height: 1.33;
   --md-sys-typescale-headline-small-tracking: 0px;
+  --md-sys-typescale-headline-small-emphasized-size: 24px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-small-emphasized-line-height: 1.33; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-small-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-large-size: 22px;
   --md-sys-typescale-title-large-line-height: 1.27;
   --md-sys-typescale-title-large-tracking: 0px;
+  --md-sys-typescale-title-large-emphasized-size: 22px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-large-emphasized-line-height: 1.27; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-large-emphasized-tracking: 0px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-medium-size: 16px;
   --md-sys-typescale-title-medium-line-height: 1.5;
   --md-sys-typescale-title-medium-tracking: 0.15px;
+  --md-sys-typescale-title-medium-emphasized-size: 16px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-medium-emphasized-line-height: 1.5; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-medium-emphasized-tracking: 0.15px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-small-size: 14px;
   --md-sys-typescale-title-small-line-height: 1.43;
   --md-sys-typescale-title-small-tracking: 0.1px;
+  --md-sys-typescale-title-small-emphasized-size: 14px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-small-emphasized-line-height: 1.43; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-small-emphasized-tracking: 0.1px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-large-size: 16px;
   --md-sys-typescale-body-large-line-height: 1.5;
   --md-sys-typescale-body-large-tracking: 0.5px;
+  --md-sys-typescale-body-large-emphasized-size: 16px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-large-emphasized-line-height: 1.5; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-large-emphasized-tracking: 0.5px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-medium-size: 14px;
   --md-sys-typescale-body-medium-line-height: 1.43;
   --md-sys-typescale-body-medium-tracking: 0.25px;
+  --md-sys-typescale-body-medium-emphasized-size: 14px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-medium-emphasized-line-height: 1.43; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-medium-emphasized-tracking: 0.25px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-small-size: 12px;
   --md-sys-typescale-body-small-line-height: 1.33;
   --md-sys-typescale-body-small-tracking: 0.4px;
+  --md-sys-typescale-body-small-emphasized-size: 12px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-small-emphasized-line-height: 1.33; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-small-emphasized-tracking: 0.4px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-large-size: 14px;
   --md-sys-typescale-label-large-line-height: 1.43;
   --md-sys-typescale-label-large-tracking: 0.1px;
+  --md-sys-typescale-label-large-emphasized-size: 14px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-large-emphasized-line-height: 1.43; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-large-emphasized-tracking: 0.1px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-medium-size: 12px;
   --md-sys-typescale-label-medium-line-height: 1.33;
   --md-sys-typescale-label-medium-tracking: 0.5px;
+  --md-sys-typescale-label-medium-emphasized-size: 12px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-medium-emphasized-line-height: 1.33; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-medium-emphasized-tracking: 0.5px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-small-size: 11px;
   --md-sys-typescale-label-small-line-height: 1.45;
   --md-sys-typescale-label-small-tracking: 0.5px;
+  --md-sys-typescale-label-small-emphasized-size: 11px; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-small-emphasized-line-height: 1.45; /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-small-emphasized-tracking: 0.5px; /** M3 Expressive emphasized variant — same metrics, bold weight */
   --space-2xs: 4px;
   --space-xs: 8px;
   --space-sm: 16px;
@@ -248,34 +299,64 @@
   --md-sys-color-shadow: var(--md-ref-palette-neutral-0);
   --md-sys-typescale-display-large-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-display-large-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-display-large-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-large-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-display-medium-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-display-medium-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-display-medium-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-medium-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-display-small-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-display-small-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-display-small-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-display-small-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-headline-large-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-headline-large-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-headline-large-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-large-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-headline-medium-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-headline-medium-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-headline-medium-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-medium-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-headline-small-font: var(--md-ref-typeface-brand);
   --md-sys-typescale-headline-small-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-headline-small-emphasized-font: var(--md-ref-typeface-brand); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-headline-small-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-large-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-title-large-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-title-large-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-large-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-medium-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-title-medium-weight: var(--md-ref-typeface-weight-medium);
+  --md-sys-typescale-title-medium-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-medium-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-title-small-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-title-small-weight: var(--md-ref-typeface-weight-medium);
+  --md-sys-typescale-title-small-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-title-small-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-large-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-body-large-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-body-large-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-large-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-medium-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-body-medium-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-body-medium-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-medium-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-body-small-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-body-small-weight: var(--md-ref-typeface-weight-regular);
+  --md-sys-typescale-body-small-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-body-small-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-large-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-label-large-weight: var(--md-ref-typeface-weight-medium);
+  --md-sys-typescale-label-large-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-large-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-medium-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-label-medium-weight: var(--md-ref-typeface-weight-medium);
+  --md-sys-typescale-label-medium-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-medium-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --md-sys-typescale-label-small-font: var(--md-ref-typeface-plain);
   --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium);
+  --md-sys-typescale-label-small-emphasized-font: var(--md-ref-typeface-plain); /** M3 Expressive emphasized variant — same metrics, bold weight */
+  --md-sys-typescale-label-small-emphasized-weight: var(--md-ref-typeface-weight-bold); /** M3 Expressive emphasized variant — same metrics, bold weight */
   --color-number-emphasis: var(--md-ref-palette-tertiary-60); /** Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold) */
   --color-number-marker: var(--md-ref-palette-tertiary-80); /** Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text */
   --color-surface-footer: var(--md-ref-palette-neutral-20); /** Footer background — intentionally fixed dark, does not flip with site theme */

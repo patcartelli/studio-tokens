@@ -81,42 +81,42 @@
   },
   "color": {
     "number-emphasis": {
-      "value": "{md.ref.palette.tertiary.60}",
+      "value": "{ref.tertiary.60}",
       "type": "color",
       "description": "Gold for emphasized stat numbers — passes AA only at large-text sizes (>=24px or 19px bold)"
     },
     "number-marker": {
-      "value": "{md.ref.palette.tertiary.80}",
+      "value": "{ref.tertiary.80}",
       "type": "color",
       "description": "Bright yellow highlighter background behind ink numbers — decorative, pair with on-surface text"
     },
     "surface-footer": {
-      "value": "{md.ref.palette.neutral.20}",
+      "value": "{ref.neutral.20}",
       "type": "color",
       "description": "Footer background — intentionally fixed dark, does not flip with site theme"
     },
     "on-surface-footer": {
-      "value": "{md.ref.palette.neutral.95}",
+      "value": "{ref.neutral.95}",
       "type": "color",
       "description": "Footer text — fixed light, pairs with the fixed-dark footer surface"
     },
     "footer-link": {
-      "value": "{md.ref.palette.tertiary.80}",
+      "value": "{ref.tertiary.80}",
       "type": "color",
       "description": "Footer link color — fixed bright yellow (tertiary key color), does not flip"
     },
     "on-surface-footer-muted": {
-      "value": "{md.ref.palette.neutral.40}",
+      "value": "{ref.neutral.40}",
       "type": "color",
       "description": "Muted decorative text on footer (large name treatment) — ~2:1 by design"
     },
     "on-surface-footer-copyright": {
-      "value": "{md.ref.palette.neutral.70}",
+      "value": "{ref.neutral.70}",
       "type": "color",
       "description": "Copyright text — >=4.5:1 on inverse-surface in light scheme"
     },
     "border-footer": {
-      "value": "{md.ref.palette.neutral.30}",
+      "value": "{ref.neutral.30}",
       "type": "color",
       "description": "Subtle border on footer — ~1.4:1 hairline by design"
     }
